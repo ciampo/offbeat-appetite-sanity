@@ -1,0 +1,65 @@
+{
+  "name": "theoffbeatappetite",
+  "private": true,
+  "version": "1.0.0",
+  "description": "The Sanity.io CMS empowering The Offbeat Appetite's frontend",
+  "main": "package.json",
+  "author": "Marco Ciampini <marco.ciampo@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "test": "sanity check",
+    "lint": "eslint '**/*.js'"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "post-checkout": "if [[ $HUSKY_GIT_PARAMS =~ 1$ ]]; then yarn install --frozen-lockfile; fi",
+      "post-merge": "yarn install --frozen-lockfile",
+      "post-rebase": "yarn install",
+      "pre-push": "yarn test"
+    }
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "keywords": [
+    "sanity",
+    "offbeat-appetite"
+  ],
+  "dependencies": {
+    "@sanity/base": "^0.147.8",
+    "@sanity/components": "^0.147.9",
+    "@sanity/core": "^0.147.9",
+    "@sanity/dashboard": "^0.147.8",
+    "@sanity/default-layout": "^0.147.9",
+    "@sanity/default-login": "^0.147.0",
+    "@sanity/desk-tool": "^0.147.9",
+    "@sanity/vision": "^0.147.9",
+    "prop-types": "^15.6",
+    "react": "^16.2",
+    "react-dom": "^16.2",
+    "sanity-plugin-dashboard-widget-document-list": "^0.0.8"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "husky": "^4.0.10",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ciampo/offbeat-appetite-sanity.git"
+  }
+}

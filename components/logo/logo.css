@@ -1,0 +1,12 @@
+@import "part:@sanity/base/theme/variables-style";
+
+.logo {
+  display: block;
+  height: 2rem !important;
+  transform: translateY(-0.4em);
+
+  @media (--screen-medium) {
+    transform: none;
+  }
+}
+
