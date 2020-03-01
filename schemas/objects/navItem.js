@@ -7,7 +7,13 @@ export default {
       name: 'page',
       title: 'Page',
       type: 'reference',
-      to: [{ type: 'pageHome' }, { type: 'pageAbout' }, { type: 'pageCategory' }],
+      to: [
+        { type: 'pageHome' },
+        { type: 'pageAbout' },
+        { type: 'pageCategory' },
+        { type: 'pageSearch' },
+        { type: 'pageGallery' },
+      ],
       validation: (Rule) => Rule.required(),
     },
 

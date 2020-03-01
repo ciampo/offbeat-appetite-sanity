@@ -15,7 +15,6 @@ export default {
   fields: [
     //  TODO:
     // - SVG logo
-    // - Default SEO? Or should we use the homepage
     // - favicon base (check if with image pipeline we can add background / crop corners...)
     // Canonical Url
     {
@@ -71,6 +70,9 @@ export default {
             { type: 'pageAbout' },
             { type: 'pageCategory' },
             { type: 'pageBlogPost' },
+            { type: 'pageSearch' },
+            { type: 'pageGallery' },
+            { type: 'pageThankYou' },
           ],
         },
       ],

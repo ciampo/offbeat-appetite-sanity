@@ -1,4 +1,4 @@
-import MdSettings from 'react-icons/lib/md/settings';
+import MdBubbleChart from 'react-icons/lib/md/bubble-chart';
 
 const socialReplaceDescription =
   'The ":platformName" placeholder will be replaced with each social platform name';
@@ -7,7 +7,7 @@ export default {
   name: 'siteMiscContent',
   type: 'document',
   title: 'Site Miscellaneous Content',
-  icon: MdSettings,
+  icon: MdBubbleChart,
   __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
   fieldsets: [
     { name: 'general', title: 'General' },

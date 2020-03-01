@@ -1,4 +1,4 @@
-import MdPersonPin from 'react-icons/lib/md/person-pin';
+import MdPermMedia from 'react-icons/lib/md/perm-media';
 
 import {
   generateSeoTitleField,
@@ -7,10 +7,10 @@ import {
 } from '../common/seo';
 
 export default {
-  name: 'pageAbout',
+  name: 'pageGallery',
   type: 'document',
-  title: 'About Page',
-  icon: MdPersonPin,
+  title: 'Gallery Page',
+  icon: MdPermMedia,
   __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
   fieldsets: [{ name: 'seo', title: 'SEO' }],
   fields: [
@@ -19,16 +19,7 @@ export default {
       name: 'title',
       type: 'string',
       title: 'Title',
-      description: 'The title shown in the page',
-      validation: (Rule) => Rule.required(),
-    },
-
-    // Body content
-    {
-      name: 'content',
-      type: 'bodyPortableText',
-      title: 'Content',
-      description: 'The main content of the page',
+      description: `The title shown in the page`,
       validation: (Rule) => Rule.required(),
     },
 
@@ -48,7 +39,7 @@ export default {
     },
     prepare() {
       return {
-        title: 'About Page',
+        title: 'Gallery Page',
       };
     },
   },

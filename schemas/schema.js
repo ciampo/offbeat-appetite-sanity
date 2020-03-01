@@ -9,12 +9,15 @@ import person from './documents/person';
 import tag from './documents/tag';
 import category from './documents/category';
 import blogPost from './documents/blogPost';
-import siteSettings from './documents/siteSettings';
-import pageCategory from './documents/pageCategory';
-import pageBlogPost from './documents/pageBlogPost';
-import pageAbout from './documents/pageAbout';
-import pageHome from './documents/pageHome';
 import siteMiscContent from './documents/siteMiscContent';
+import siteSettings from './documents/siteSettings';
+import pageHome from './documents/pageHome';
+import pageAbout from './documents/pageAbout';
+import pageBlogPost from './documents/pageBlogPost';
+import pageCategory from './documents/pageCategory';
+import pageSearch from './documents/pageSearch';
+import pageGallery from './documents/pageGallery';
+import pageThankYou from './documents/pageThankYou';
 
 // Object types
 import captionedImage from './objects/captionedImage';
@@ -42,6 +45,9 @@ export default createSchema({
     pageAbout,
     pageBlogPost,
     pageHome,
+    pageSearch,
+    pageGallery,
+    pageThankYou,
 
     // Objects
     captionedImage,

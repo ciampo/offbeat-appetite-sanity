@@ -1,4 +1,4 @@
-import MdPersonPin from 'react-icons/lib/md/person-pin';
+import FaHeart from 'react-icons/lib/fa/heart';
 
 import {
   generateSeoTitleField,
@@ -7,10 +7,10 @@ import {
 } from '../common/seo';
 
 export default {
-  name: 'pageAbout',
+  name: 'pageThankYou',
   type: 'document',
-  title: 'About Page',
-  icon: MdPersonPin,
+  title: 'Thank You Page (after form submission)',
+  icon: FaHeart,
   __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
   fieldsets: [{ name: 'seo', title: 'SEO' }],
   fields: [
@@ -19,7 +19,7 @@ export default {
       name: 'title',
       type: 'string',
       title: 'Title',
-      description: 'The title shown in the page',
+      description: `The title shown in the page`,
       validation: (Rule) => Rule.required(),
     },
 
@@ -48,7 +48,7 @@ export default {
     },
     prepare() {
       return {
-        title: 'About Page',
+        title: 'Thank You Page',
       };
     },
   },

@@ -1,4 +1,4 @@
-import MdPersonPin from 'react-icons/lib/md/person-pin';
+import MdSearch from 'react-icons/lib/md/search';
 
 import {
   generateSeoTitleField,
@@ -7,10 +7,10 @@ import {
 } from '../common/seo';
 
 export default {
-  name: 'pageAbout',
+  name: 'pageSearch',
   type: 'document',
-  title: 'About Page',
-  icon: MdPersonPin,
+  title: 'Search Page',
+  icon: MdSearch,
   __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
   fieldsets: [{ name: 'seo', title: 'SEO' }],
   fields: [
@@ -19,16 +19,25 @@ export default {
       name: 'title',
       type: 'string',
       title: 'Title',
-      description: 'The title shown in the page',
+      description: `The title shown in the page`,
       validation: (Rule) => Rule.required(),
     },
 
-    // Body content
+    // Category Filters - Title
     {
-      name: 'content',
-      type: 'bodyPortableText',
-      title: 'Content',
-      description: 'The main content of the page',
+      name: 'categoryFilterTitle',
+      type: 'string',
+      title: 'Category Filters Title',
+      description: `The title used for the Category filters.`,
+      validation: (Rule) => Rule.required(),
+    },
+
+    // Tag Filters - Title
+    {
+      name: 'tagFilterTitle',
+      type: 'string',
+      title: 'Tag Filters Title',
+      description: `The title used for the Tag filters`,
       validation: (Rule) => Rule.required(),
     },
 
@@ -48,7 +57,7 @@ export default {
     },
     prepare() {
       return {
-        title: 'About Page',
+        title: 'Search Page',
       };
     },
   },

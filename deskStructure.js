@@ -1,7 +1,7 @@
 import S from '@sanity/desk-tool/structure-builder';
 import MdSettings from 'react-icons/lib/md/settings';
 import MdDescription from 'react-icons/lib/md/description';
-import MdChromeReaderMode from 'react-icons/lib/md/chrome-reader-mode';
+import MdBubbleChart from 'react-icons/lib/md/bubble-chart';
 
 // https://www.sanity.io/guides/getting-started-with-structure-builder
 export default () =>
@@ -27,6 +27,17 @@ export default () =>
           S.list()
             .title('Pages')
             .items([
+              // Home Page
+              S.listItem()
+                .title('Home Page')
+                // This automatically gives it properties from the project type
+                .schemaType('pageHome')
+                .child(
+                  S.editor()
+                    .schemaType('pageHome')
+                    .documentId('singletonPageHome')
+                ),
+
               // About Page
               S.listItem()
                 .title('About Page')
@@ -60,15 +71,37 @@ export default () =>
                     .documentId('singletonPageCategory')
                 ),
 
-              // Home Page
+              // Search Page
               S.listItem()
-                .title('Home Page')
+                .title('Search Page')
                 // This automatically gives it properties from the project type
-                .schemaType('pageHome')
+                .schemaType('pageSearch')
                 .child(
                   S.editor()
-                    .schemaType('pageHome')
-                    .documentId('singletonPageHome')
+                    .schemaType('pageSearch')
+                    .documentId('singletonPageSearch')
+                ),
+
+              // Gallery Page
+              S.listItem()
+                .title('Gallery Page')
+                // This automatically gives it properties from the project type
+                .schemaType('pageGallery')
+                .child(
+                  S.editor()
+                    .schemaType('pageGallery')
+                    .documentId('singletonPageGallery')
+                ),
+
+              // Thank You Page
+              S.listItem()
+                .title('Thank You Page')
+                // This automatically gives it properties from the project type
+                .schemaType('pageThankYou')
+                .child(
+                  S.editor()
+                    .schemaType('pageThankYou')
+                    .documentId('singletonPageThankYou')
                 ),
             ])
         ),
@@ -79,7 +112,7 @@ export default () =>
       // Misc Content
       S.listItem()
         .title('Misc Content')
-        .icon(MdChromeReaderMode)
+        .icon(MdBubbleChart)
         .child(
           S.editor()
             .schemaType('siteMiscContent')

@@ -1,4 +1,4 @@
-import MdDescription from 'react-icons/lib/md/description';
+import MdFlag from 'react-icons/lib/md/flag';
 
 import { generateSeoTitleField, generateSeoDescriptionField } from '../common/seo';
 
@@ -9,7 +9,7 @@ export default {
   name: 'pageCategory',
   type: 'document',
   title: 'Category Page',
-  icon: MdDescription,
+  icon: MdFlag,
   __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
   fieldsets: [{ name: 'seo', title: 'SEO' }],
   fields: [
@@ -32,4 +32,15 @@ export default {
       additionalDescription: replaceDescription,
     }),
   ],
+
+  preview: {
+    select: {
+      title: 'title',
+    },
+    prepare() {
+      return {
+        title: 'Each Category Page',
+      };
+    },
+  },
 };

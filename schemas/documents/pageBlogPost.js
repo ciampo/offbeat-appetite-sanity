@@ -1,4 +1,4 @@
-import MdDescription from 'react-icons/lib/md/description';
+import MdLibraryBooks from 'react-icons/lib/md/library-books';
 
 import { generateSeoTitleField, generateSeoDescriptionField } from '../common/seo';
 
@@ -6,7 +6,7 @@ export default {
   name: 'pageBlogPost',
   type: 'document',
   title: 'Blog Post Page',
-  icon: MdDescription,
+  icon: MdLibraryBooks,
   __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
   fieldsets: [{ name: 'seo', title: 'SEO' }],
   fields: [

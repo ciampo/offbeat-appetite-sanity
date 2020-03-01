@@ -1,4 +1,4 @@
-import MdDescription from 'react-icons/lib/md/description';
+import MdHome from 'react-icons/lib/md/home';
 
 import {
   generateSeoTitleField,
@@ -14,7 +14,7 @@ export default {
   name: 'pageHome',
   type: 'document',
   title: 'Home Page',
-  icon: MdDescription,
+  icon: MdHome,
   // __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
   fieldsets: [{ name: 'seo', title: 'SEO' }],
   fields: [
@@ -63,4 +63,15 @@ export default {
     // Seo Image
     generateSeoImageField(),
   ],
+
+  preview: {
+    select: {
+      title: 'title',
+    },
+    prepare() {
+      return {
+        title: 'Home Page',
+      };
+    },
+  },
 };
