@@ -1,30 +1,22 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import LinkIcon from 'react-icons/lib/md/link';
+import GlobeIcon from 'react-icons/lib/fa/globe';
+import ExternalLinkIcon from 'react-icons/lib/fa/external-link';
 
-const ExternalLinkIcon = () => (
-  <>
-    <LinkIcon />↗
-  </>
-);
 const ExternalLinkRender = (props) => {
   return (
     <span>
-      {props.children} <LinkIcon />
-      {props.blank ? '↑' : '→'}
+      {props.children} <GlobeIcon />
+      {props.blank && <ExternalLinkIcon />}
     </span>
   );
 };
 
-const InternalLinkIcon = () => (
-  <>
-    <LinkIcon />↓
-  </>
-);
 const InternalLinkRender = (props) => {
   return (
     <span>
-      {props.children} <InternalLinkIcon />
+      {props.children} <LinkIcon />
     </span>
   );
 };
@@ -40,7 +32,7 @@ export const portableTextMarks = {
       type: 'object',
       title: 'Internal link',
       blockEditor: {
-        icon: InternalLinkIcon,
+        icon: LinkIcon,
         render: InternalLinkRender,
       },
       fields: [
@@ -58,7 +50,7 @@ export const portableTextMarks = {
       type: 'object',
       title: 'External link',
       blockEditor: {
-        icon: ExternalLinkIcon,
+        icon: GlobeIcon,
         render: ExternalLinkRender,
       },
       fields: [
