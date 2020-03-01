@@ -22,4 +22,15 @@ export default {
         'The ":blogPostExcerpt" placeholder will be replaced with each post excerpt',
     }),
   ],
+
+  preview: {
+    select: {
+      title: 'title',
+    },
+    prepare() {
+      return {
+        title: 'Each Blog Post Page',
+      };
+    },
+  },
 };
