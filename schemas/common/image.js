@@ -25,7 +25,7 @@ export const generateImageField = ({
       : null,
     caption
       ? {
-          name: 'captioon',
+          name: 'caption',
           type: 'string',
           title: 'Caption',
           description: 'Caption text will be displayed under the image',
