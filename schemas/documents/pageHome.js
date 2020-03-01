@@ -15,7 +15,7 @@ export default {
   type: 'document',
   title: 'Home Page',
   icon: MdHome,
-  // __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
+  __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
   fieldsets: [{ name: 'seo', title: 'SEO' }],
   fields: [
     // Title
