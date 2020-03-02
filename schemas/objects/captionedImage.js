@@ -1,25 +1,36 @@
 import React from 'react';
 
-import { generateImageField } from '../common/image';
-
 export default {
-  ...generateImageField({
-    name: 'captionedImage',
-    title: 'Captioned image',
-    description: 'An image with an optional caption',
-    altText: true,
-    caption: true,
-  }),
+  name: 'captionedImage',
+  title: 'Captioned Image',
+  description: 'An image with an optional caption',
+  type: 'object',
+  fields: [
+    {
+      name: 'image',
+      title: 'Image',
+      type: 'reference',
+      to: [{ type: 'accessibleImage' }],
+      description: 'The image',
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'caption',
+      type: 'string',
+      title: 'Caption',
+      description: 'The caption text (optional)',
+    },
+  ],
   preview: {
     select: {
-      alt: 'alt',
+      alt: 'image.image.alt',
       caption: 'caption',
-      url: 'asset.url',
+      url: 'image.image.asset.url',
     },
     prepare(selection) {
       return {
-        title: `[image] ${selection.alt}`,
-        subtitle: selection.caption,
+        title: `📸 ${selection.alt}`,
+        subtitle: selection.caption || '[No caption]',
         media: <img src={selection.url} alt={selection.alt} />,
       };
     },

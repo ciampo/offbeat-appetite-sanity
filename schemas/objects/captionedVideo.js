@@ -3,44 +3,35 @@ import React from 'react';
 export default {
   name: 'captionedVideo',
   title: 'Captioned Video',
-  type: 'file',
+  description: 'A video with an optional caption',
+  type: 'object',
   fields: [
     {
-      name: 'label',
-      type: 'string',
-      title: 'Label',
-      description: 'Label only used in the CMS to easily recognise each video',
-      validation: (Rule) => Rule.required(),
-    },
-    {
-      name: 'poster',
-      type: 'image',
-      title: 'Poster image',
-      description: 'The poster image used before the video is played',
+      name: 'video',
+      title: 'Video',
+      type: 'reference',
+      to: [{ type: 'accessibleVideo' }],
+      description: 'The video',
       validation: (Rule) => Rule.required(),
     },
     {
       name: 'caption',
       type: 'string',
       title: 'Caption',
-      description: 'Caption text will be displayed under the video',
+      description: 'The caption text (optional)',
     },
   ],
-  options: {
-    storeOriginalFilename: false,
-    accept: 'video/mp4',
-  },
   preview: {
     select: {
-      alt: 'label',
+      alt: 'video.video.alt',
       caption: 'caption',
-      url: 'poster.asset.url',
+      url: 'video.video.poster.asset.url',
     },
     prepare(selection) {
       return {
-        title: `[video] ${selection.alt}`,
-        subtitle: selection.caption,
-        media: selection.url ? <img src={selection.url} alt={selection.alt} /> : null,
+        title: `🎥 ${selection.alt}`,
+        subtitle: selection.caption || '[No caption]',
+        media: <img src={selection.url} alt={selection.alt} />,
       };
     },
   },

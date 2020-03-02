@@ -2,6 +2,7 @@ import S from '@sanity/desk-tool/structure-builder';
 import MdSettings from 'react-icons/lib/md/settings';
 import MdDescription from 'react-icons/lib/md/description';
 import MdBubbleChart from 'react-icons/lib/md/bubble-chart';
+import MdPermMedia from 'react-icons/lib/md/perm-media';
 
 // https://www.sanity.io/guides/getting-started-with-structure-builder
 export default () =>
@@ -15,6 +16,23 @@ export default () =>
       ...S.documentTypeListItems().filter((listItem) =>
         ['blogPost', 'category', 'tag', 'person'].includes(listItem.getId())
       ),
+
+      // Visual Divider
+      S.divider(),
+
+      // Assets (accessible images / videos)
+      S.listItem()
+        .title('Assets')
+        .icon(MdPermMedia)
+        .child(
+          S.list()
+            .title('Assets')
+            .items([
+              ...S.documentTypeListItems().filter((listItem) =>
+                ['accessibleImage', 'accessibleVideo'].includes(listItem.getId())
+              ),
+            ])
+        ),
 
       // Visual Divider
       S.divider(),

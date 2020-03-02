@@ -5,6 +5,8 @@ import createSchema from 'part:@sanity/base/schema-creator';
 import schemaTypes from 'all:part:@sanity/base/schema-type';
 
 // Document types
+import accessibleImage from './documents/accessibleImage';
+import accessibleVideo from './documents/accessibleVideo';
 import person from './documents/person';
 import tag from './documents/tag';
 import category from './documents/category';
@@ -36,6 +38,8 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     // Documents
+    accessibleImage,
+    accessibleVideo,
     siteSettings,
     siteMiscContent,
     blogPost,

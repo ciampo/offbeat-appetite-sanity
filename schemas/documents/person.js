@@ -1,7 +1,7 @@
+import React from 'react';
 import MdPerson from 'react-icons/lib/md/person';
 
 import { generateSlugField } from '../common/slug';
-import { generateImageField } from '../common/image';
 import { iso2 } from '../common/countryCodes';
 
 export default {
@@ -27,12 +27,14 @@ export default {
     }),
 
     // Profile image
-    generateImageField({
+    {
       name: 'image',
       title: 'Image',
+      type: 'reference',
+      to: [{ type: 'accessibleImage' }],
       description: 'The profile image',
-      altText: true,
-    }),
+      validation: (Rule) => Rule.required(),
+    },
 
     // Bio
     {
@@ -73,4 +75,17 @@ export default {
       validation: (Rule) => Rule.required(),
     },
   ],
+
+  preview: {
+    select: {
+      name: 'name',
+      url: 'image.image.asset.url',
+    },
+    prepare(selection) {
+      return {
+        title: selection.name,
+        media: <img src={selection.url} alt={selection.name} />,
+      };
+    },
+  },
 };

@@ -5,7 +5,6 @@ import {
   generateSeoDescriptionField,
   generateSeoImageField,
 } from '../common/seo';
-import { generateImageField } from '../common/image';
 
 // const replaceDescription =
 // 'The ":categoryName" placeholder will be replaced with each category name';
@@ -37,12 +36,14 @@ export default {
     },
 
     // Hero Image
-    generateImageField({
+    {
       name: 'heroImage',
       title: 'Hero Image',
+      type: 'reference',
+      to: [{ type: 'accessibleImage' }],
       description: "The image displayed in the page's hero",
-      altText: true,
-    }),
+      validation: (Rule) => Rule.required(),
+    },
 
     // Category sections
     {
