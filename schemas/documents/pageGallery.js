@@ -23,6 +23,25 @@ export default {
       validation: (Rule) => Rule.required(),
     },
 
+    // Images
+    {
+      name: 'images',
+      type: 'array',
+      title: 'Images',
+      description: 'The images features in the gallery page.',
+      of: [
+        {
+          title: 'Featured Gallery Image',
+          type: 'reference',
+          to: [{ type: 'accessibleImage' }],
+        },
+      ],
+      validation: (Rule) => [
+        Rule.min(1).error('The page needs at least one image!'),
+        Rule.unique(),
+      ],
+    },
+
     // Seo Title
     generateSeoTitleField(),
 
