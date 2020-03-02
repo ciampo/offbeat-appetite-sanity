@@ -24,6 +24,7 @@ import pageThankYou from './documents/pageThankYou';
 // Object types
 import captionedImage from './objects/captionedImage';
 import captionedVideo from './objects/captionedVideo';
+import mediaGallery from './objects/mediaGallery';
 import bioPortableText from './objects/bioPortableText';
 import bodyPortableText from './objects/bodyPortableText';
 import emailAddress from './objects/emailAddress';
@@ -57,6 +58,7 @@ export default createSchema({
     // Objects
     captionedImage,
     captionedVideo,
+    mediaGallery,
     bioPortableText,
     bodyPortableText,
     emailAddress,

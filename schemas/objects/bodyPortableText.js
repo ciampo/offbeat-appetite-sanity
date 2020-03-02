@@ -4,6 +4,7 @@ export default {
   name: 'bodyPortableText',
   type: 'array',
   title: 'Content',
+  description: 'Rich portable text used for body content.',
   of: [
     {
       type: 'block',
@@ -23,6 +24,9 @@ export default {
     },
     {
       type: 'captionedVideo',
+    },
+    {
+      type: 'mediaGallery',
     },
   ],
 };
