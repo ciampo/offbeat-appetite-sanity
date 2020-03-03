@@ -1,10 +1,15 @@
+import MdImage from 'react-icons/lib/md/image';
+import MdVideoCam from 'react-icons/lib/md/videocam';
+import MdPermMedia from 'react-icons/lib/md/perm-media';
+import MdRestaurantMenu from 'react-icons/lib/md/restaurant-menu';
+
 import { portableTextMarks, portableTextLists } from '../common/portableText';
 
 export default {
-  name: 'bodyPortableText',
+  name: 'richPortableText',
   type: 'array',
   title: 'Content',
-  description: 'Rich portable text used for body content.',
+  description: 'Rich portable text allowing custom blocks.',
   of: [
     {
       type: 'block',
@@ -21,12 +26,19 @@ export default {
     },
     {
       type: 'captionedImage',
+      icon: MdImage,
     },
     {
       type: 'captionedVideo',
+      icon: MdVideoCam,
     },
     {
       type: 'mediaGallery',
+      icon: MdPermMedia,
+    },
+    {
+      type: 'recipe',
+      icon: MdRestaurantMenu,
     },
   ],
 };

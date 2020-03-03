@@ -25,8 +25,9 @@ import pageThankYou from './documents/pageThankYou';
 import captionedImage from './objects/captionedImage';
 import captionedVideo from './objects/captionedVideo';
 import mediaGallery from './objects/mediaGallery';
-import bioPortableText from './objects/bioPortableText';
-import bodyPortableText from './objects/bodyPortableText';
+import recipe from './objects/recipe';
+import simplePortableText from './objects/simplePortableText';
+import richPortableText from './objects/richPortableText';
 import emailAddress from './objects/emailAddress';
 import categorySection from './objects/categorySection';
 import navItem from './objects/navItem';
@@ -59,8 +60,9 @@ export default createSchema({
     captionedImage,
     captionedVideo,
     mediaGallery,
-    bioPortableText,
-    bodyPortableText,
+    recipe,
+    simplePortableText,
+    richPortableText,
     emailAddress,
     categorySection,
     navItem,

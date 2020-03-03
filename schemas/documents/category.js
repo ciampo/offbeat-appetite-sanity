@@ -19,13 +19,6 @@ export default {
       validation: (Rule) => Rule.max(30).required(),
     },
 
-    // Slug
-    generateSlugField({
-      name: 'slug',
-      source: 'name',
-      maxLength: 20,
-    }),
-
     // Featured posts
     {
       name: 'featured',
@@ -56,5 +49,12 @@ export default {
 
     // SEO Image
     generateSeoImageField(),
+
+    // Slug
+    generateSlugField({
+      name: 'slug',
+      source: 'name',
+      maxLength: 20,
+    }),
   ],
 };

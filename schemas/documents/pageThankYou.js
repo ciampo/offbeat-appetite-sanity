@@ -26,7 +26,7 @@ export default {
     // Body content
     {
       name: 'content',
-      type: 'bodyPortableText',
+      type: 'richPortableText',
       title: 'Content',
       description: 'The main content of the page',
       validation: (Rule) => Rule.required(),

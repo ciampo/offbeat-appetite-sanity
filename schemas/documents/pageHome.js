@@ -6,9 +6,6 @@ import {
   generateSeoImageField,
 } from '../common/seo';
 
-// const replaceDescription =
-// 'The ":categoryName" placeholder will be replaced with each category name';
-
 export default {
   name: 'pageHome',
   type: 'document',
@@ -50,7 +47,7 @@ export default {
       name: 'categorySections',
       type: 'array',
       title: 'Category Sections',
-      description: 'Each category will have its own section showing its featured blog posts.',
+      description: 'Each category will have its own section showing the featured blog posts.',
       of: [{ type: 'categorySection' }],
       validation: (Rule) => Rule.unique(),
     },

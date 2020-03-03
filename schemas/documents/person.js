@@ -19,13 +19,6 @@ export default {
       validation: (Rule) => Rule.required(),
     },
 
-    // Slug
-    generateSlugField({
-      name: 'slug',
-      source: 'name',
-      maxLength: 20,
-    }),
-
     // Profile image
     {
       name: 'image',
@@ -39,7 +32,7 @@ export default {
     // Bio
     {
       name: 'bio',
-      type: 'bioPortableText',
+      type: 'simplePortableText',
       title: 'Bio',
       description: "This person's biography",
       validation: (Rule) => Rule.required(),
@@ -74,6 +67,13 @@ export default {
       },
       validation: (Rule) => Rule.required(),
     },
+
+    // Slug
+    generateSlugField({
+      name: 'slug',
+      source: 'name',
+      maxLength: 20,
+    }),
   ],
 
   preview: {

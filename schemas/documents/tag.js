@@ -1,11 +1,14 @@
 import MdStyle from 'react-icons/lib/md/style';
 
+import { generateSlugField } from '../common/slug';
+
 export default {
   name: 'tag',
   type: 'document',
   title: 'Tag',
   icon: MdStyle,
   fields: [
+    // Name
     {
       name: 'name',
       type: 'string',
@@ -13,16 +16,12 @@ export default {
       description: 'The displayed name of the tag',
       validation: (Rule) => Rule.required(),
     },
-    {
+
+    // Slug
+    generateSlugField({
       name: 'slug',
-      type: 'slug',
-      title: 'Slug',
-      description: 'Note: changing a slug of an exising document is usually a bad idea',
-      options: {
-        source: 'name',
-        maxLength: 20,
-      },
-      validation: (Rule) => Rule.required(),
-    },
+      source: 'name',
+      maxLength: 20,
+    }),
   ],
 };
