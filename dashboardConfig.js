@@ -15,7 +15,5 @@ export default {
       options: { title: 'Recent blog posts', order: '_createdAt desc', types: ['blogPost'] },
       layout: { width: 'medium' },
     },
-    // TODO:
-    // - add netlify
   ],
 };

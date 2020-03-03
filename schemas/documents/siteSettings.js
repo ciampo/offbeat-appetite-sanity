@@ -13,9 +13,6 @@ export default {
   icon: MdSettings,
   __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
   fields: [
-    //  TODO:
-    // - SVG logo
-    // - favicon base (check if with image pipeline we can add background / crop corners...)
     // Canonical Url
     {
       name: 'canonicalUrl',
