@@ -10,6 +10,7 @@
     "start": "sanity start",
     "build": "sanity build",
     "deploy": "sanity deploy",
+    "static": "yarn build && cp netlify.toml dist",
     "test": "sanity check",
     "lint": "eslint '**/*.js'"
   },
