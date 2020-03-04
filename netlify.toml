@@ -1,3 +1,11 @@
+# Redirect default Netlify subdomain to primary domain
+[[redirects]]
+  from = "https://offbeatappetite-sanity-studio.netlify.com/*"
+  to = "https://studio.offbeatappetite.com/:splat"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+# Redirect to home folder
 [[redirects]]
   from = "/*"
   to = "/"
