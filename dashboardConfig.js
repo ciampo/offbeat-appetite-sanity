@@ -17,7 +17,13 @@ export default {
             name: 'offbeatappetite-sanity-studio',
           },
           {
-            title: 'Website',
+            title: 'Website — Staging',
+            apiId: '5d37d630-bbc1-41c4-8c3d-c3f4a068359a',
+            buildHookId: '5e5fc185eebfcc2bb5661fc5',
+            name: 'offbeatappetite',
+          },
+          {
+            title: 'Website — PRODUCTION',
             apiId: '8a466cb6-4eef-463d-81be-18240576884d',
             buildHookId: '5e5f87f4c7b55b0d099b0da1',
             name: 'offbeatappetite',
