@@ -881,7 +881,6 @@
 "@sanity/cli@^1.149.2":
   version "1.149.2"
   resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-1.149.2.tgz#15b3d39cbd71b5cb5f6b9e4b6e8bfeb5669d3b49"
-  integrity sha512-rvYIZvTR2MONl2J2QXf2eyJBctTfGlZOG/hFiILwwYAF+S9ZmZzzVnw0bvJpKrl9fZxJ0MUK2eXcBakBm2QpYw==
 
 "@sanity/client@0.140.36":
   version "0.140.36"
@@ -1780,6 +1779,12 @@
 abab@^2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/abab/-/abab-2.0.3.tgz#623e2075e02eb2d3f2475e49f99c91846467907a"
+
+abort-controller@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.npmjs.org/abort-controller/-/abort-controller-2.0.3.tgz#b174827a732efadff81227ed4b8d1cc569baf20a"
+  dependencies:
+    event-target-shim "^5.0.0"
 
 accepts@~1.3.7:
   version "1.3.7"
@@ -3921,6 +3926,10 @@ event-emitter@~0.3.5:
   dependencies:
     d "1"
     es5-ext "~0.10.14"
+
+event-target-shim@^5.0.0:
+  version "5.0.1"
+  resolved "https://registry.npmjs.org/event-target-shim/-/event-target-shim-5.0.1.tgz#5d4d3ebdf9583d63a5333ce2deb7480ab2b05789"
 
 events@^3.0.0:
   version "3.1.0"
@@ -8304,6 +8313,13 @@ sanity-plugin-dashboard-widget-document-list@^0.0.8:
     "@sanity/base" "^0.140.9"
     "@sanity/components" "^0.140.9"
     lodash "^4.17.11"
+
+sanity-plugin-dashboard-widget-netlify@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/sanity-plugin-dashboard-widget-netlify/-/sanity-plugin-dashboard-widget-netlify-1.0.1.tgz#e510e40e05b9bcfdf11a4a2affed590e191bb93b"
+  dependencies:
+    abort-controller "^2.0.3"
+    react-props-stream "^1.0.0"
 
 sanity-plugin-media@^0.2.10:
   version "0.2.10"
