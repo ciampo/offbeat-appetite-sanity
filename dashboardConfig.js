@@ -3,7 +3,7 @@ export default {
     {
       name: 'document-list',
       options: { title: 'Last edited blog posts', order: '_updatedAt desc', types: ['blogPost'] },
-      layout: { width: 'medium', height: 'small' },
+      layout: { width: 'small', height: 'small' },
     },
     {
       name: 'netlify',
@@ -38,7 +38,11 @@ export default {
     },
     {
       name: 'project-info',
-      layout: { width: 'full', height: 'small' },
+      layout: { width: 'medium', height: 'small' },
+    },
+    {
+      name: 'orphans',
+      layout: { width: 'medium', height: 'small' },
     },
   ],
 };

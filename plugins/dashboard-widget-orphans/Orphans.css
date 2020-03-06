@@ -1,0 +1,82 @@
+
+@import 'part:@sanity/base/theme/variables-style';
+
+.container {
+  composes: container from "part:@sanity/dashboard/widget-styles";
+}
+
+.header {
+  composes: header from "part:@sanity/dashboard/widget-styles";
+}
+
+.title {
+  composes: title from "part:@sanity/dashboard/widget-styles";
+}
+
+.content {
+  composes: content from 'part:@sanity/dashboard/widget-styles';
+  border-top: 1px solid var(--hairline-color);
+  padding: var(--small-padding) 0;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.orphanItem {
+  composes: item from 'part:@sanity/base/theme/layout/selectable-style';
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: inherit;
+  text-decoration: inherit;
+  outline: none;
+  padding: var(--small-padding) var(--medium-padding);
+  height: 100%;
+}
+
+.mediaLink {
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  margin-right: 0.75rem;
+}
+
+.media {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  object-fit: cover;
+}
+
+.info {
+  flex: 1 0 0;
+}
+
+.infoItem {
+  display: block;
+  margin: 0;
+}
+
+.preText {
+  display: inline;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.itemButton {
+  cursor: pointer;
+  widht: 5rem;
+  margin-left: 0.75rem;
+}
+
+.itemButton:disabled {
+  opacity: 0.3;
+}
+
+.footer {
+  composes: footer from 'part:@sanity/dashboard/widget-styles';
+  border-top: 1px solid var(--hairline-color);
+}
