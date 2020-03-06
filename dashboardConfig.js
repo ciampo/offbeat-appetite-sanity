@@ -20,7 +20,7 @@ export default {
             title: 'Website — Staging',
             apiId: '5d37d630-bbc1-41c4-8c3d-c3f4a068359a',
             buildHookId: '5e5fc185eebfcc2bb5661fc5',
-            name: 'offbeatappetite',
+            name: 'offbeatappetite-staging',
           },
           {
             title: 'Website — PRODUCTION',
