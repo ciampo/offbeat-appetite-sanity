@@ -1,13 +1,39 @@
 # offbeat-appetite-sanity
 
-The CMS feeding The Offbeat Appetite's frontend, made with Sanity.io
+The CMS feeding The Offbeat Appetite's frontend, made with [Sanity](https://www.sanity.io/) and [hosted on Netlify](https://studio.offbeatappetite.com)
 
-## Sanity Studio
+## 🛠 Setup
 
-Congratulations, you have now installed the Sanity Content Studio, an open source real-time content editing environment connected to the Sanity backend.
+- install `node` glolbally
+- install `yarn` glolbally
+- `yarn install`
 
-Now you can do the following things:
+## 📝 Main scripts
 
-- [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
-- [Join the community Slack](https://slack.sanity.io/?utm_source=readme)
-- [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
+### `yarn start`
+
+Starts the application in development mode (hot-code reloading, error reporting, etc)
+
+### `yarn build`
+
+Builds the prod version of the studio (static build)
+
+### `yarn deploy`
+
+Builds the studio and deploys it (as a static site) on Sanity's default hosting
+
+### `yarn static`
+
+Runs `yarn build` and also preps additional Netlify config.
+
+### `yarn test`
+
+Runs Sanity's own checks.
+
+### `yarn lint`
+
+Lints the code.
+
+## 👻 Contributors
+
+- [Marco Ciampini](https://github.com/ciampo)
