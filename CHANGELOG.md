@@ -52,6 +52,6 @@ in case of vulnerabilities.
 - Initial project setup (scripts, linters, netlify config)
 - Initial CMS setup: schemas, test doucments, dashboard, desk document lists..
 
-[Unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v1.0.0...HEAD
-[0.0.2]: https://github.com/ciampo/offbeat-appetite-sanity/compare/tag/v0.0.1...v0.0.2
+[Unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.2...HEAD
+[0.0.2]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.1...v0.0.2
 [0.0.1]: https://github.com/ciampo/offbeat-appetite-sanity/releases/tag/v0.0.1
