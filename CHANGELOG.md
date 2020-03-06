@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Changelog
+- More complete changelog
 
 <!--
 ## [X.Y.X] - YYYY-MM-DD
@@ -44,6 +44,10 @@ in case of vulnerabilities.
 ### Added
 
 - Custom Orphan Assets Dashboard widget
+
+### Fixed
+
+- Fixed staging site name in the Netlify dashboard widget
 
 ## [0.0.1] - 2020-03-04
 
