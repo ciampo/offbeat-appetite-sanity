@@ -1,7 +1,7 @@
 {
   "name": "offbeat-appetite-sanity",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The CMS feeding The Offbeat Appetite's frontend, made with Sanity.io",
   "main": "package.json",
   "author": "Marco Ciampini <marco.ciampo@gmail.com>",
