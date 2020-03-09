@@ -13,15 +13,6 @@ export default {
   icon: MdSettings,
   __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
   fields: [
-    // Canonical Url
-    {
-      name: 'canonicalUrl',
-      type: 'url',
-      title: 'Canonical URL',
-      description: 'The PUBLIC URL where the site can be found at',
-      validation: (Rule) => Rule.required(),
-    },
-
     // Nav links
     {
       name: 'navItems',
