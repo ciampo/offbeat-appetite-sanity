@@ -5,9 +5,17 @@ export default {
   type: 'object',
   fields: [
     {
-      name: 'label',
-      title: 'Label',
-      description: 'Used in the CMS only to quickly identify this recipe block',
+      name: 'title',
+      title: 'Title',
+      description: 'The title of the recipe section',
+      type: 'string',
+      validation: (Rule) => Rule.required(),
+    },
+
+    {
+      name: 'description',
+      title: 'Description',
+      description: 'The description of the recipe',
       type: 'string',
       validation: (Rule) => Rule.required(),
     },
@@ -88,7 +96,6 @@ export default {
               quantity: 'quantity',
             },
             prepare(selection) {
-              console.log(selection);
               const quantity = selection.quantity || '';
               const unit =
                 selection.unit.length > 0 && selection.unit[0] === 'unitless'
@@ -119,11 +126,13 @@ export default {
   ],
   preview: {
     select: {
-      title: 'label',
+      title: 'title',
+      description: 'description',
     },
     prepare(selection) {
       return {
         title: `Recipe: ${selection.title}`,
+        subtitle: selection.description,
       };
     },
   },

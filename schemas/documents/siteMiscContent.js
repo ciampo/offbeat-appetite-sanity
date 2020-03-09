@@ -76,16 +76,6 @@ export default {
       validation: (Rule) => Rule.required(),
     },
 
-    // Recipe - Block title
-    {
-      fieldset: 'recipe',
-      name: 'recipeBlockTitle',
-      type: 'string',
-      title: 'Recipe Block Title',
-      description: 'The text used as the title of the recipe block.',
-      validation: (Rule) => Rule.required(),
-    },
-
     // Recipe - Ingredients section
     {
       fieldset: 'recipe',
@@ -136,7 +126,17 @@ export default {
       validation: (Rule) => Rule.required(),
     },
 
-    // Blog post - Authoi label
+    // Recipe - Servings label
+    {
+      fieldset: 'recipe',
+      name: 'recipeServingsLabel',
+      type: 'string',
+      title: 'Servings label',
+      description: 'The text used to label the number of servings produced by a recipe.',
+      validation: (Rule) => Rule.required(),
+    },
+
+    // Blog post - Author label
     {
       fieldset: 'blogPost',
       name: 'authorLabel',
