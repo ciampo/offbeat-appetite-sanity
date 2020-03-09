@@ -3,21 +3,20 @@ export default {
   title: 'Category Section',
   type: 'object',
   fields: [
-    {
-      name: 'category',
-      title: 'Category',
-      type: 'reference',
-      to: [{ type: 'category' }],
-      validation: (Rule) => Rule.required(),
-    },
-
     // Section Title
     {
       name: 'title',
       type: 'string',
       title: 'Section Title',
-      description:
-        'The title shown in the category section. The ":categoryName" placeholder will be replaced with each category name',
+      description: 'The title shown in the category section',
+      validation: (Rule) => Rule.required(),
+    },
+
+    {
+      name: 'category',
+      title: 'Category',
+      type: 'reference',
+      to: [{ type: 'category' }],
       validation: (Rule) => Rule.required(),
     },
   ],
@@ -28,8 +27,8 @@ export default {
     },
     prepare(selection) {
       return {
-        title: selection.category,
-        subtitle: selection.title,
+        title: selection.title,
+        subtitle: selection.category,
       };
     },
   },
