@@ -35,6 +35,12 @@ for any bug fixes.
 in case of vulnerabilities.
 -->
 
+## [0.0.5] - 2020-03-09
+
+### Removed
+
+- Canonical URL (will be provided via `.env` instead)
+
 ## [0.0.4] - 2020-03-09
 
 ### Removed
@@ -72,7 +78,8 @@ in case of vulnerabilities.
 - Initial project setup (scripts, linters, netlify config)
 - Initial CMS setup: schemas, test doucments, dashboard, desk document lists..
 
-[Unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.4...HEAD
+[Unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.5...HEAD
+[0.0.5]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.4...v0.0.5
 [0.0.4]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.3...v0.0.4
 [0.0.3]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.2...v0.0.3
 [0.0.2]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.1...v0.0.2
