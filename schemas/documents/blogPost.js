@@ -5,6 +5,9 @@ import MdLibraryBooks from 'react-icons/lib/md/library-books';
 import { generateSlugField } from '../common/slug';
 import { generateSeoImageField } from '../common/seo';
 
+// TODO: move to common
+const DRAFT_PREFIX_STRING = 'drafts.';
+
 export default {
   name: 'blogPost',
   type: 'document',
@@ -122,6 +125,36 @@ export default {
       description: 'The main content of the post',
       fieldset: 'content',
       validation: (Rule) => Rule.required(),
+    },
+
+    // Featured posts
+    {
+      name: 'related',
+      type: 'array',
+      title: 'Related blog posts',
+      description: 'The related blog posts',
+      of: [
+        {
+          title: 'Related Blog Post',
+          type: 'reference',
+          to: [{ type: 'blogPost' }],
+          options: {
+            filter: ({ document }) => {
+              const publishedId = document._id.startsWith(DRAFT_PREFIX_STRING)
+                ? document._id.substring(DRAFT_PREFIX_STRING.length)
+                : document._id;
+              return {
+                filter: '_id != $currentBlogPostId',
+                params: { currentBlogPostId: publishedId },
+              };
+            },
+          },
+        },
+      ],
+      validation: (Rule) => [
+        Rule.max(2).error('There can be up to 2 related blog posts'),
+        Rule.unique(),
+      ],
     },
 
     // Seo Image
