@@ -13,17 +13,6 @@ export default {
   icon: MdSettings,
   __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
   fields: [
-    // Nav links
-    {
-      name: 'navItems',
-      type: 'array',
-      title: 'Navigation items',
-      description:
-        'Each item will show in the site navigation. In case of the category page, all pages will be a separatet link.',
-      of: [{ type: 'navItem' }],
-      validation: (Rule) => Rule.unique(),
-    },
-
     //  order
     {
       name: 'categoriesOrder',

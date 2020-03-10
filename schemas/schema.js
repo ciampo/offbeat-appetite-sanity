@@ -30,7 +30,6 @@ import simplePortableText from './objects/simplePortableText';
 import richPortableText from './objects/richPortableText';
 import emailAddress from './objects/emailAddress';
 import categorySection from './objects/categorySection';
-import navItem from './objects/navItem';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -65,6 +64,5 @@ export default createSchema({
     richPortableText,
     emailAddress,
     categorySection,
-    navItem,
   ]),
 });
