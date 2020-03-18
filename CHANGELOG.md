@@ -35,6 +35,18 @@ for any bug fixes.
 in case of vulnerabilities.
 -->
 
+## [0.0.7] - 2020-03-18
+
+### Added
+
+- org name and founder fields
+
+### Changed
+
+- refactored email text fields with better validation
+- reduced max lenght of bog post titles
+- person's bio changed from portable text to simple text
+
 ## [0.0.6] - 2020-03-12
 
 ### Removed
@@ -84,7 +96,8 @@ in case of vulnerabilities.
 - Initial project setup (scripts, linters, netlify config)
 - Initial CMS setup: schemas, test doucments, dashboard, desk document lists..
 
-[Unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.6...HEAD
+[Unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.7...HEAD
+[0.0.7]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.6...v0.0.7
 [0.0.6]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.5...v0.0.6
 [0.0.5]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.4...v0.0.5
 [0.0.4]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.3...v0.0.4
