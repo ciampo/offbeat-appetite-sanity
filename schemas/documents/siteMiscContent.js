@@ -1,5 +1,7 @@
 import MdBubbleChart from 'react-icons/lib/md/bubble-chart';
 
+import { generateEmailField } from '../common/email';
+
 const socialReplaceDescription =
   'The ":platformName" placeholder will be replaced with each social platform name';
 
@@ -23,6 +25,25 @@ export default {
       name: 'siteName',
       type: 'string',
       title: 'Site Name',
+      validation: (Rule) => Rule.required(),
+    },
+
+    // Org email
+    generateEmailField({
+      fieldset: 'general',
+      name: 'organisationEmail',
+      title: 'Site Email',
+      description: 'The email associated with the site',
+    }),
+
+    // Org Founder
+    {
+      fieldset: 'general',
+      name: 'organisationAuthor',
+      type: 'reference',
+      title: 'Site Founder',
+      description: 'The person who created the site',
+      to: [{ type: 'person' }],
       validation: (Rule) => Rule.required(),
     },
 
