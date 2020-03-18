@@ -24,7 +24,7 @@ export default {
       title: 'Title',
       description: 'The title of the blog post',
       fieldset: 'info',
-      validation: (Rule) => Rule.max(60).required(),
+      validation: (Rule) => Rule.max(50).required(),
     },
 
     // Author
