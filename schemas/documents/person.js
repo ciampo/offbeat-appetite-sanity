@@ -33,7 +33,8 @@ export default {
     // Bio
     {
       name: 'bio',
-      type: 'simplePortableText',
+      type: 'text',
+      rows: 5,
       title: 'Bio',
       description: "This person's biography",
       validation: (Rule) => Rule.required(),
