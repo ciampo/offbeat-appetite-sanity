@@ -5,9 +5,6 @@ import MdLibraryBooks from 'react-icons/lib/md/library-books';
 import { generateSlugField } from '../common/slug';
 import { generateSeoImageField } from '../common/seo';
 
-// TODO: move to common
-const DRAFT_PREFIX_STRING = 'drafts.';
-
 export default {
   name: 'blogPost',
   type: 'document',
