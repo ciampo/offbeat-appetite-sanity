@@ -137,13 +137,14 @@ export default {
   preview: {
     select: {
       title: 'title',
-      subtitle: 'category.name',
+      category: 'category.name',
+      excerpt: 'excerpt',
       url: 'previewImage.image.asset.url',
     },
     prepare(selection) {
       return {
-        title: selection.title,
-        subtitle: selection.subtitle,
+        title: `${selection.title} [${selection.category}]`,
+        subtitle: selection.excerpt,
         media: <img src={selection.url} alt={selection.title} />,
       };
     },
