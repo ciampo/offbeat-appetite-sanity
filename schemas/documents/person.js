@@ -2,6 +2,7 @@ import React from 'react';
 import MdPerson from 'react-icons/lib/md/person';
 
 import { generateSlugField } from '../common/slug';
+import { generateEmailField } from '../common/email';
 import { iso2 } from '../common/countryCodes';
 
 export default {
@@ -48,12 +49,11 @@ export default {
     },
 
     // Email
-    {
+    generateEmailField({
       name: 'email',
-      type: 'emailAddress',
-      title: 'Email address',
+      title: 'emailAddress',
       description: 'The email address associated to this person',
-    },
+    }),
 
     // Country
     {
