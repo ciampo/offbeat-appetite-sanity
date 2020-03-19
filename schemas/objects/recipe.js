@@ -38,10 +38,26 @@ export default {
 
     {
       name: 'servings',
-      title: 'Number of servings',
-      description: 'The number of servings that the recipe produces',
-      type: 'number',
-      validation: (Rule) => Rule.required().min(1),
+      title: 'Servings',
+      description: 'The quantity of food produced by the recipe',
+      type: 'object',
+      fields: [
+        {
+          name: 'quantity',
+          type: 'string',
+          title: 'Quantity',
+          description: 'A number representing the quantity of food',
+          validation: (Rule) => Rule.required().min(1),
+        },
+        {
+          name: 'unit',
+          type: 'string',
+          title: 'Unit',
+          description: 'The unit associated to the quantity (e.g. people, slices, loafs..)',
+          validation: (Rule) => Rule.required(),
+        },
+      ],
+      validation: (Rule) => Rule.required(),
     },
 
     {
@@ -120,8 +136,79 @@ export default {
       name: 'method',
       title: 'Method',
       description: 'The instructions to follow in order to cook this recipe',
-      type: 'simplePortableText',
+      type: 'array',
+      of: [
+        {
+          name: 'methodStep',
+          type: 'object',
+          title: 'Step',
+          fields: [
+            {
+              name: 'title',
+              type: 'string',
+              title: 'Step title',
+              description: 'The title of the step',
+              validation: (Rule) => Rule.required(),
+            },
+            {
+              name: 'content',
+              type: 'simplePortableText',
+              title: 'Content',
+              description: 'The content of the step',
+              validation: (Rule) => Rule.required(),
+            },
+          ],
+        },
+      ],
+      validation: (Rule) => Rule.required().min(1),
+    },
+
+    {
+      name: 'cuisine',
+      title: 'Cuisine',
+      description: 'Used mainly for SEO purposes',
+      type: 'string',
       validation: (Rule) => Rule.required(),
+    },
+
+    {
+      name: 'category',
+      title: 'Recipe category',
+      description: 'Used mainly for SEO purposes. Examples: appetizer, entree, dessert, etc.',
+      type: 'string',
+      validation: (Rule) => Rule.required(),
+    },
+
+    {
+      name: 'calories',
+      title: 'Calories',
+      description: 'Used mainly for SEO purposes. The number of calories per serving',
+      type: 'number',
+      validation: (Rule) => Rule.required().min(0),
+    },
+
+    {
+      name: 'diets',
+      title: 'Suitable for diets',
+      description: 'Used mainly for SEO purposes',
+      type: 'array',
+      of: [{ type: 'string' }],
+      options: {
+        list: [
+          { title: 'Diabetic', value: 'DiabeticDiet' },
+          { title: 'Gluten Free', value: 'GlutenFreeDiet' },
+          { title: 'Halal', value: 'HalalDiet' },
+          { title: 'Hindu', value: 'HinduDiet' },
+          { title: 'Kosher', value: 'KosherDiet' },
+          { title: 'Low Calories', value: 'LowCalorieDiet' },
+          { title: 'Low Fat', value: 'LowFatDiet' },
+          { title: 'Low Lactose', value: 'LowLactoseDiet' },
+          { title: 'Low Salt', value: 'LowSaltDiet' },
+          { title: 'Vegan', value: 'VeganDiet' },
+          { title: 'Vegetarian', value: 'VegetarianDiet' },
+        ],
+      },
+      validation: (Rule) => Rule.unique(),
     },
   ],
   preview: {
