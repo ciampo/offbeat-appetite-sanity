@@ -143,8 +143,8 @@ export default {
     },
     prepare(selection) {
       return {
-        title: `${selection.title} [${selection.category}]`,
-        subtitle: selection.excerpt,
+        title: selection.title,
+        subtitle: `[${selection.category}] ${selection.excerpt}`,
         media: <img src={selection.url} alt={selection.title} />,
       };
     },
