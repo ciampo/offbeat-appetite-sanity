@@ -40,13 +40,20 @@ export default {
       validation: (Rule) => Rule.required(),
     },
 
-    // Homepage
+    // URLs
     {
-      name: 'homepage',
-      type: 'url',
-      title: 'Homepage',
-      description: 'The URL associated to this person',
-      validation: (Rule) => Rule.required(),
+      name: 'urls',
+      type: 'array',
+      title: 'Links',
+      description: 'A list of links associated to this person',
+      of: [
+        {
+          type: 'url',
+          title: 'Link',
+          description: 'The URL of the link',
+        },
+      ],
+      validation: (Rule) => Rule.required().min(1),
     },
 
     // Email
