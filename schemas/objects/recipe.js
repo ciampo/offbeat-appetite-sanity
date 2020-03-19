@@ -51,7 +51,7 @@ export default {
       type: 'array',
       of: [
         {
-          title: 'Actor name',
+          title: 'Ingredient',
           type: 'object',
           fields: [
             {

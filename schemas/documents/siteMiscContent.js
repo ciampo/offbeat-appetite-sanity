@@ -47,17 +47,39 @@ export default {
       validation: (Rule) => Rule.required(),
     },
 
-    // Social Links Label
+    // Social Links
     {
       fieldset: 'social',
-      name: 'socialLinksLabel',
-      type: 'string',
-      title: 'Social Links label',
-      description: `The text used to label this site's social links. ${socialReplaceDescription}`,
-      validation: (Rule) => Rule.required(),
+      name: 'socialLinks',
+      type: 'array',
+      title: 'Social Links',
+      description: 'A list of links to the social accounts associated to this project',
+      of: [
+        {
+          title: 'Social Link',
+          type: 'object',
+          fields: [
+            {
+              name: 'url',
+              title: 'URL',
+              description: "The link's URL",
+              type: 'url',
+              validation: (Rule) => Rule.required(),
+            },
+            {
+              name: 'label',
+              title: 'Label',
+              description: "The link's label (used for accessibility reasons)",
+              type: 'string',
+              validation: (Rule) => Rule.required(),
+            },
+            // TODO: icon
+          ],
+        },
+      ],
     },
 
-    // Social Links Label
+    // Social Share Label
     {
       fieldset: 'social',
       name: 'socialShareLabel',
@@ -153,7 +175,7 @@ export default {
       name: 'recipeServingsLabel',
       type: 'string',
       title: 'Servings label',
-      description: 'The text used to label the number of servings produced by a recipe.',
+      description: 'The text used to label the resulting yield of the recipe.',
       validation: (Rule) => Rule.required(),
     },
 
