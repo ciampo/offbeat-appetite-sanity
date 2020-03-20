@@ -35,6 +35,27 @@ for any bug fixes.
 in case of vulnerabilities.
 -->
 
+## [0.0.8] - 2020-03-20
+
+### Added
+
+- added `cuisine` to recipe block
+- added `calories` to recipe block
+- added `category` to recipe block
+- added `diets` to recipe block
+- multiple site social links in Misc Settings
+
+### Changed
+
+- split recipe method into sub-steps
+- Blog Post preview: moved category to description
+- upgraded Sanity to latest version
+- allow more than one URLs associated to a Person
+
+### Fixed
+
+- removed `git add` from `lint-staged` scripts
+
 ## [0.0.7] - 2020-03-18
 
 ### Added
@@ -96,7 +117,8 @@ in case of vulnerabilities.
 - Initial project setup (scripts, linters, netlify config)
 - Initial CMS setup: schemas, test doucments, dashboard, desk document lists..
 
-[Unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.7...HEAD
+[Unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.8...HEAD
+[0.0.8]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.7...v0.0.8
 [0.0.7]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.6...v0.0.7
 [0.0.6]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.5...v0.0.6
 [0.0.5]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.4...v0.0.5
