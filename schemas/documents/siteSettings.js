@@ -3,7 +3,7 @@ import client from 'part:@sanity/base/client';
 import MdSettings from 'react-icons/lib/md/settings';
 
 const howManyCategoriesQuery = `//groq
-  count(*[_type == "category"]{})
+  count(*[_type == "category" && !(_id in path("drafts.**"))]{})
 `;
 
 export default {
