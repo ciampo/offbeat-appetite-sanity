@@ -35,6 +35,13 @@ for any bug fixes.
 in case of vulnerabilities.
 -->
 
+## [0.0.10] - 2020-03-23
+
+### Added
+
+- added org email label and social platform type
+- added keywords to blog post
+
 ## [0.0.9] - 2020-03-22
 
 ### Changed
@@ -127,7 +134,8 @@ in case of vulnerabilities.
 - Initial project setup (scripts, linters, netlify config)
 - Initial CMS setup: schemas, test doucments, dashboard, desk document lists..
 
-[Unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.9...HEAD
+[Unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.10...HEAD
+[0.0.10]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.9...v0.0.10
 [0.0.9]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.8...v0.0.9
 [0.0.8]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.7...v0.0.8
 [0.0.7]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.6...v0.0.7
