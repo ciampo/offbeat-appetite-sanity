@@ -127,6 +127,25 @@ export default {
     // Seo Image
     generateSeoImageField(),
 
+    // Keywords
+    {
+      name: 'keywords',
+      title: 'Keywords',
+      description: 'A list of keywords associated to this blog post',
+      type: 'array',
+      of: [
+        {
+          type: 'string',
+          validation: (Rule) =>
+            Rule.regex(/,/, {
+              name: 'commas',
+              invert: true,
+            }).required(),
+        },
+      ],
+      validation: (Rule) => Rule.required().min(1),
+    },
+
     // Slug
     generateSlugField({
       name: 'slug',
