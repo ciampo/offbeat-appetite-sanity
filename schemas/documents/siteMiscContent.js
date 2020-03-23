@@ -28,14 +28,6 @@ export default {
       validation: (Rule) => Rule.required(),
     },
 
-    // Org email
-    generateEmailField({
-      fieldset: 'general',
-      name: 'organisationEmail',
-      title: 'Site Email',
-      description: 'The email associated with the site',
-    }),
-
     // Org Founder
     {
       fieldset: 'general',
@@ -44,6 +36,24 @@ export default {
       title: 'Site Founder',
       description: 'The person who created the site',
       to: [{ type: 'person' }],
+      validation: (Rule) => Rule.required(),
+    },
+
+    // Org email
+    generateEmailField({
+      fieldset: 'general',
+      name: 'organisationEmail',
+      title: 'Site Email',
+      description: 'The email associated with the site',
+    }),
+
+    // Org email - label
+    {
+      fieldset: 'general',
+      name: 'organisationEmailLabel',
+      type: 'string',
+      title: 'Site Email label label',
+      description: 'The text labelling the email link',
       validation: (Rule) => Rule.required(),
     },
 
@@ -73,7 +83,24 @@ export default {
               type: 'string',
               validation: (Rule) => Rule.required(),
             },
-            // TODO: icon
+            {
+              name: 'platform',
+              title: 'Platform',
+              description: 'The social network platform for this link',
+              type: 'array',
+              of: [{ type: 'string' }],
+              options: {
+                list: [
+                  { title: 'Instragram', value: 'instagram' },
+                  { title: 'Facebook', value: 'facebook' },
+                  { title: 'Pinterest', value: 'pinterest' },
+                ],
+              },
+              validation: (Rule) =>
+                Rule.required()
+                  .min(1)
+                  .max(1),
+            },
           ],
         },
       ],
