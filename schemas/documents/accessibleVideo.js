@@ -25,6 +25,12 @@ export default {
           type: 'image',
           title: 'Poster image',
           description: "The poster image used as the video's thumbnail",
+          options: {
+            hotspot: true,
+            storeOriginalFilename: false,
+            metadata: ['palette'],
+            accept: '.png, .jpg, .jpeg',
+          },
           validation: (Rule) => Rule.required(),
         },
       ],
