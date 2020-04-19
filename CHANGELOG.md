@@ -35,6 +35,13 @@ for any bug fixes.
 in case of vulnerabilities.
 -->
 
+## [0.0.11] - 2020-04-19
+
+### Changed
+
+- added hotspot/crop options to video poster image
+- updated depenencies
+
 ## [0.0.10] - 2020-03-23
 
 ### Added
@@ -134,7 +141,8 @@ in case of vulnerabilities.
 - Initial project setup (scripts, linters, netlify config)
 - Initial CMS setup: schemas, test doucments, dashboard, desk document lists..
 
-[Unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.10...HEAD
+[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.11...HEAD
+[0.0.11]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.10...v0.0.11
 [0.0.10]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.9...v0.0.10
 [0.0.9]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.8...v0.0.9
 [0.0.8]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.7...v0.0.8
