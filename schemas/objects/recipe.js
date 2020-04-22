@@ -44,7 +44,7 @@ export default {
       fields: [
         {
           name: 'quantity',
-          type: 'string',
+          type: 'number',
           title: 'Quantity',
           description: 'A number representing the quantity of food',
           validation: (Rule) => Rule.required().min(1),
