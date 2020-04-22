@@ -146,6 +146,28 @@ export default {
       validation: (Rule) => Rule.required(),
     },
 
+    // Recipe - Information section
+    {
+      fieldset: 'recipe',
+      name: 'recipeInformationSectionTitle',
+      type: 'string',
+      title: 'Information Section Title',
+      description:
+        'The text used as the title of the information section in a recipe (visually hiddem but useful for assistive technology).',
+      validation: (Rule) => Rule.required(),
+    },
+
+    // Recipe - Description section
+    {
+      fieldset: 'recipe',
+      name: 'recipeDescriptionSectionTitle',
+      type: 'string',
+      title: 'Description Section Title',
+      description:
+        'The text used as the title of the description section in a recipe (visually hiddem but useful for assistive technology).',
+      validation: (Rule) => Rule.required(),
+    },
+
     // Recipe - Ingredients section
     {
       fieldset: 'recipe',
