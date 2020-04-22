@@ -36,10 +36,7 @@ export default {
           to: [{ type: 'accessibleImage' }],
         },
       ],
-      validation: (Rule) => [
-        Rule.min(1).error('The page needs at least one image!'),
-        Rule.unique(),
-      ],
+      validation: (Rule) => Rule.unique().min(1),
     },
 
     // Seo Title

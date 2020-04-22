@@ -65,7 +65,7 @@ export default {
         sortable: false,
       },
       fieldset: 'info',
-      validation: (Rule) => Rule.unique(),
+      validation: (Rule) => Rule.unique().min(1),
     },
 
     // Date published

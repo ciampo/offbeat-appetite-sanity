@@ -49,7 +49,7 @@ export default {
       title: 'Category Sections',
       description: 'Each category will have its own section showing the featured blog posts.',
       of: [{ type: 'categorySection' }],
-      validation: (Rule) => Rule.unique(),
+      validation: (Rule) => Rule.unique().min(1),
     },
 
     // Seo Title

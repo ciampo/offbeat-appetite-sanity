@@ -126,10 +126,7 @@ export default {
           },
         },
       ],
-      validation: (Rule) => [
-        Rule.min(1).error('There should be at least 1 ingredient'),
-        Rule.unique(),
-      ],
+      validation: (Rule) => Rule.unique().min(1),
     },
 
     {
