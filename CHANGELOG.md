@@ -35,6 +35,12 @@ for any bug fixes.
 in case of vulnerabilities.
 -->
 
+## [0.0.12] - 2020-04-22
+
+### Added
+
+- recipeInformationSectionTitle and recipeDescriptionSectionTitle to misc content
+
 ## [0.0.11] - 2020-04-19
 
 ### Changed
@@ -141,7 +147,8 @@ in case of vulnerabilities.
 - Initial project setup (scripts, linters, netlify config)
 - Initial CMS setup: schemas, test doucments, dashboard, desk document lists..
 
-[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.11...HEAD
+[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.12...HEAD
+[0.0.12]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.11...v0.0.12
 [0.0.11]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.10...v0.0.11
 [0.0.10]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.9...v0.0.10
 [0.0.9]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.8...v0.0.9
