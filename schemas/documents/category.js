@@ -38,13 +38,12 @@ export default {
           },
         },
       ],
-      validation: (Rule) => [
-        Rule.min(1).warning(
-          "Without any features blog post, the homepage won't show this category"
-        ),
-        Rule.max(3).error('There can be up to 3 featured blog posts for each category'),
-        Rule.unique(),
-      ],
+      validation: (Rule) =>
+        Rule.unique().custom((currentlySelectedBlogPosts) => {
+          return currentlySelectedBlogPosts.length === 1 || currentlySelectedBlogPosts.length == 3
+            ? true
+            : 'Each category should have either 1 or 3 featured posts';
+        }),
     },
 
     // SEO Image
