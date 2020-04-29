@@ -35,6 +35,12 @@ for any bug fixes.
 in case of vulnerabilities.
 -->
 
+## [0.0.14] - 2020-04-29
+
+### Changed
+
+- Updated featured blog posts validation rule (either 1 or 3)
+
 ## [0.0.13] - 2020-04-22
 
 ### Fixed
@@ -154,7 +160,8 @@ in case of vulnerabilities.
 - Initial project setup (scripts, linters, netlify config)
 - Initial CMS setup: schemas, test doucments, dashboard, desk document lists..
 
-[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.13...HEAD
+[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.14...HEAD
+[0.0.14]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.13...v0.0.14
 [0.0.13]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.12...v0.0.13
 [0.0.12]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.11...v0.0.12
 [0.0.11]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.10...v0.0.11
