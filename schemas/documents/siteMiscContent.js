@@ -17,6 +17,7 @@ export default {
     { name: 'subcribe', title: 'Subscribe form' },
     { name: 'recipe', title: 'Recipe block' },
     { name: 'blogPost', title: 'Blog post' },
+    { name: 'subscribeForm', title: 'Subscribe form' },
   ],
   fields: [
     // Site Name
@@ -235,6 +236,86 @@ export default {
       type: 'string',
       title: 'Author label',
       description: `The text labelling the author section.`,
+      validation: (Rule) => Rule.required(),
+    },
+
+    // Subscribe form - Title
+    {
+      fieldset: 'subscribeForm',
+      name: 'subscribeFormTitle',
+      type: 'string',
+      title: 'Form title',
+      description: `The text used as the title of the subscribe form`,
+      validation: (Rule) => Rule.required(),
+    },
+
+    // Subscribe form - Name input label
+    {
+      fieldset: 'subscribeForm',
+      name: 'subscribeFormNameInputLabel',
+      type: 'string',
+      title: 'Name input label',
+      description: `The text used as the label of the name input`,
+      validation: (Rule) => Rule.required(),
+    },
+
+    // Subscribe form - Email input label
+    {
+      fieldset: 'subscribeForm',
+      name: 'subscribeFormEmailInputLabel',
+      type: 'string',
+      title: 'Email input label',
+      description: `The text used as the label of the email input`,
+      validation: (Rule) => Rule.required(),
+    },
+
+    // Subscribe form - Submit button label
+    {
+      fieldset: 'subscribeForm',
+      name: 'subscribeFormSubmitButtonLabel',
+      type: 'string',
+      title: 'Submit button label',
+      description: `The text used as the label of the submit button`,
+      validation: (Rule) => Rule.required(),
+    },
+
+    // Subscribe form - Submit button label when submitting
+    {
+      fieldset: 'subscribeForm',
+      name: 'subscribeFormSubmitButtonLabelSubmitting',
+      type: 'string',
+      title: 'Submit button label (while submitting)',
+      description: `The text used as the label of the submit button while data is being submitted`,
+      validation: (Rule) => Rule.required(),
+    },
+
+    // Subscribe form - Form disabled message
+    {
+      fieldset: 'subscribeForm',
+      name: 'subscribeFormMessageDisabled',
+      type: 'string',
+      title: 'Form disabled message',
+      description: `The text shown to the user when the form is disabled`,
+      validation: (Rule) => Rule.required(),
+    },
+
+    // Subscribe form - Submission success message
+    {
+      fieldset: 'subscribeForm',
+      name: 'subscribeFormMessageSuccess',
+      type: 'string',
+      title: 'Submission success message',
+      description: `The text shown to the user after the form data was submitted successfully`,
+      validation: (Rule) => Rule.required(),
+    },
+
+    // Subscribe form - Error message
+    {
+      fieldset: 'subscribeForm',
+      name: 'subscribeFormMessageError',
+      type: 'string',
+      title: 'Error message',
+      description: `The text shown to the user when an error happens during submission`,
       validation: (Rule) => Rule.required(),
     },
   ],
