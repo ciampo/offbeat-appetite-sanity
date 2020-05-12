@@ -35,6 +35,20 @@ for any bug fixes.
 in case of vulnerabilities.
 -->
 
+## [0.0.15] - 2020-05-12
+
+### Added
+
+- Added more newsletter form fields
+
+### Removed
+
+- Hero image fields removed from home page
+
+### Changed
+
+- Updated dependencies
+
 ## [0.0.14] - 2020-04-29
 
 ### Changed
@@ -160,7 +174,8 @@ in case of vulnerabilities.
 - Initial project setup (scripts, linters, netlify config)
 - Initial CMS setup: schemas, test doucments, dashboard, desk document lists..
 
-[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.14...HEAD
+[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.15...HEAD
+[0.0.15]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.14...v0.0.15
 [0.0.14]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.13...v0.0.14
 [0.0.13]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.12...v0.0.13
 [0.0.12]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.11...v0.0.12
