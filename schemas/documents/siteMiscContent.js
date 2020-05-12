@@ -14,7 +14,6 @@ export default {
   fieldsets: [
     { name: 'general', title: 'General' },
     { name: 'social', title: 'Social' },
-    { name: 'subcribe', title: 'Subscribe form' },
     { name: 'recipe', title: 'Recipe block' },
     { name: 'blogPost', title: 'Blog post' },
     { name: 'subscribeForm', title: 'Subscribe form' },
@@ -114,36 +113,6 @@ export default {
       type: 'string',
       title: 'Social Share label',
       description: `The text used to label social sharing links. ${socialReplaceDescription}`,
-      validation: (Rule) => Rule.required(),
-    },
-
-    // Subscribe - Name
-    {
-      fieldset: 'subcribe',
-      name: 'subscribeNameLabel',
-      type: 'string',
-      title: 'Subscribe Name Field label',
-      description: 'The text used to label the name field in the subscribe form.',
-      validation: (Rule) => Rule.required(),
-    },
-
-    // Subscribe - Email
-    {
-      fieldset: 'subcribe',
-      name: 'subscribeEmailLabel',
-      type: 'string',
-      title: 'Subscribe Email Field label',
-      description: 'The text used to label the email field in the subscribe form.',
-      validation: (Rule) => Rule.required(),
-    },
-
-    // Subscribe - Submit button
-    {
-      fieldset: 'subcribe',
-      name: 'subscribeSubmitLabel',
-      type: 'string',
-      title: 'Subscribe Submit Button label',
-      description: 'The text used to label the submit button in the subscribe form.',
       validation: (Rule) => Rule.required(),
     },
 
