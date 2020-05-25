@@ -35,6 +35,18 @@ for any bug fixes.
 in case of vulnerabilities.
 -->
 
+## [0.0.16] - 2020-05-25
+
+### Added
+
+- About page hero title field
+
+### Changed
+
+- Updated dependencies
+- About page content changed to RichTextContent
+- shorter character limit for blog post exerpt
+
 ## [0.0.15] - 2020-05-12
 
 ### Added
@@ -174,7 +186,8 @@ in case of vulnerabilities.
 - Initial project setup (scripts, linters, netlify config)
 - Initial CMS setup: schemas, test doucments, dashboard, desk document lists..
 
-[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.15...HEAD
+[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.16...HEAD
+[0.0.16]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.15...v0.0.16
 [0.0.15]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.14...v0.0.15
 [0.0.14]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.13...v0.0.14
 [0.0.13]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.12...v0.0.13
