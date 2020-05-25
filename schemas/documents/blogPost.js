@@ -98,8 +98,8 @@ export default {
       description: 'A short excerpt of the blog post',
       fieldset: 'preview',
       validation: (Rule) =>
-        Rule.min(40)
-          .max(160)
+        Rule.min(20)
+          .max(80)
           .required(),
     },
 
