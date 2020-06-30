@@ -65,7 +65,10 @@ export default {
         sortable: false,
       },
       fieldset: 'info',
-      validation: (Rule) => Rule.unique().min(1),
+      validation: (Rule) =>
+        Rule.unique()
+          .min(1)
+          .error('A blog post should have at least 1 tag'),
     },
 
     // Date published
