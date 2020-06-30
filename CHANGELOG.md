@@ -35,6 +35,21 @@ for any bug fixes.
 in case of vulnerabilities.
 -->
 
+## [0.0.17] - 2020-06-30
+
+### Added
+
+- Singular category name
+
+### Changed
+
+- Updated Sanity deps
+- Updated eslint and lint-staged deps
+
+### Fixed
+
+- Error message when there are no tags in a blog post
+
 ## [0.0.16] - 2020-05-25
 
 ### Added
@@ -186,7 +201,8 @@ in case of vulnerabilities.
 - Initial project setup (scripts, linters, netlify config)
 - Initial CMS setup: schemas, test doucments, dashboard, desk document lists..
 
-[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.16...HEAD
+[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.17...HEAD
+[0.0.17]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.16...v0.0.17
 [0.0.16]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.15...v0.0.16
 [0.0.15]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.14...v0.0.15
 [0.0.14]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.13...v0.0.14
