@@ -10,12 +10,21 @@ export default {
   icon: MdFlag,
   fieldsets: [{ name: 'seo', title: 'SEO' }],
   fields: [
-    // Name
+    // Name (plural)
     {
       name: 'name',
       type: 'string',
-      title: 'Name',
-      description: 'The displayed name of the category',
+      title: 'Name (plural)',
+      description: 'The displayed name of the category when used in its plural form',
+      validation: (Rule) => Rule.max(30).required(),
+    },
+
+    // Name (singular)
+    {
+      name: 'nameSingular',
+      type: 'string',
+      title: 'Name (singular)',
+      description: 'The displayed name of the category when used in its singular form',
       validation: (Rule) => Rule.max(30).required(),
     },
 
