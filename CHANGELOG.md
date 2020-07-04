@@ -35,6 +35,12 @@ for any bug fixes.
 in case of vulnerabilities.
 -->
 
+## [0.0.18] - 2020-07-04
+
+### Added
+
+- Blog post reviews field
+
 ## [0.0.17] - 2020-06-30
 
 ### Added
