@@ -67,6 +67,13 @@ export const portableTextMarks = {
           type: 'boolean',
           validation: (Rule) => Rule.required(),
         },
+        {
+          title: 'Add nofollow attribute',
+          name: 'nofollow',
+          description: 'Read https://support.google.com/webmasters/answer/96569?hl=en',
+          type: 'boolean',
+          validation: (Rule) => Rule.required(),
+        },
       ],
     },
   ],
