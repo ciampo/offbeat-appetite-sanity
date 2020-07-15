@@ -35,6 +35,16 @@ for any bug fixes.
 in case of vulnerabilities.
 -->
 
+## [0.0.19] - 2020-07-15
+
+### Added
+
+- Added `nofollow` attribute to external links in portable text
+
+### Changed
+
+- Upgraded sanity deps
+
 ## [0.0.18] - 2020-07-04
 
 ### Added
@@ -207,7 +217,9 @@ in case of vulnerabilities.
 - Initial project setup (scripts, linters, netlify config)
 - Initial CMS setup: schemas, test doucments, dashboard, desk document lists..
 
-[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.17...HEAD
+[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.19...HEAD
+[0.0.19]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.18...v0.0.19
+[0.0.18]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.17...v0.0.18
 [0.0.17]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.16...v0.0.17
 [0.0.16]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.15...v0.0.16
 [0.0.15]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.14...v0.0.15
