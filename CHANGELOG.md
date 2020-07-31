@@ -35,6 +35,12 @@ for any bug fixes.
 in case of vulnerabilities.
 -->
 
+## [0.0.20] - 2020-07-31
+
+### Changed
+
+- Blog Post reviews as separate document
+
 ## [0.0.19] - 2020-07-15
 
 ### Added
@@ -217,7 +223,8 @@ in case of vulnerabilities.
 - Initial project setup (scripts, linters, netlify config)
 - Initial CMS setup: schemas, test doucments, dashboard, desk document lists..
 
-[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.19...HEAD
+[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.20...HEAD
+[0.0.20]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.19...v0.0.20
 [0.0.19]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.18...v0.0.19
 [0.0.18]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.17...v0.0.18
 [0.0.17]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.16...v0.0.17
