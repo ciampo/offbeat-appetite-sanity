@@ -149,19 +149,6 @@ export default {
       validation: (Rule) => Rule.required().min(1),
     },
 
-    // Reviews
-    {
-      title: 'User reviews',
-      description: 'Used only on recipes — ⚠️ DO NOT EDIT THIS FIELD MANUALLY',
-      name: 'reviews',
-      type: 'array',
-      of: [{ type: 'number' }],
-      options: {
-        sortable: false,
-        layout: 'tags',
-      },
-    },
-
     // Slug
     generateSlugField({
       name: 'slug',

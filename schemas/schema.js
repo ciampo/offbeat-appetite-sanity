@@ -20,6 +20,7 @@ import pageCategory from './documents/pageCategory';
 import pageSearch from './documents/pageSearch';
 import pageGallery from './documents/pageGallery';
 import pageThankYou from './documents/pageThankYou';
+import blogPostRating from './documents/blogPostRating';
 
 // Object types
 import captionedImage from './objects/captionedImage';
@@ -54,6 +55,7 @@ export default createSchema({
     pageSearch,
     pageGallery,
     pageThankYou,
+    blogPostRating,
 
     // Objects
     captionedImage,

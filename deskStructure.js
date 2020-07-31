@@ -14,7 +14,7 @@ export default () =>
       // Categories
       // Tags
       ...S.documentTypeListItems().filter((listItem) =>
-        ['blogPost', 'category', 'tag', 'person'].includes(listItem.getId())
+        ['blogPost', 'blogPostRating', 'category', 'tag', 'person'].includes(listItem.getId())
       ),
 
       // Visual Divider
