@@ -1,14 +1,12 @@
+/* https://www.sanity.io/docs/styling */
+
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
 :root {
   --brand-primary: #546050;
-  --brand-primary--inverted: #DEE1D5;
-  --brand-secondary: #F5E3E0;
-  --brand-secondary--inverted: #BE7F74;
+  --brand-primary--inverted: #dee1d5;
+  --brand-secondary: #f5e3e0;
+  --brand-secondary--inverted: #b15d5d;
 
   --font-family-base: 'Nunito';
-
-  /* Main Navigation */
-  --main-navigation-color: var(--brand-primary);
-  --main-navigation-color--inverted: var(--brand-primary--inverted);
 }
