@@ -9,4 +9,8 @@
   --brand-secondary--inverted: #b15d5d;
 
   --font-family-base: 'Nunito';
+
+  /* Main Navigation */
+  --main-navigation-color: var(--brand-primary);
+  --main-navigation-color--inverted: var(--brand-primary--inverted);
 }
