@@ -35,6 +35,13 @@ for any bug fixes.
 in case of vulnerabilities.
 -->
 
+## [0.0.21] - 2020-08-26
+
+### Changed
+
+- Updated studio to 1.150.3
+- Increased max width of blog post title from 50 to 60 characters
+
 ## [0.0.20] - 2020-07-31
 
 ### Changed
@@ -223,7 +230,8 @@ in case of vulnerabilities.
 - Initial project setup (scripts, linters, netlify config)
 - Initial CMS setup: schemas, test doucments, dashboard, desk document lists..
 
-[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.20...HEAD
+[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.21...HEAD
+[0.0.21]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.20...v0.0.21
 [0.0.20]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.19...v0.0.20
 [0.0.19]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.18...v0.0.19
 [0.0.18]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.17...v0.0.18
