@@ -35,6 +35,12 @@ for any bug fixes.
 in case of vulnerabilities.
 -->
 
+## [0.0.22] - 2020-08-30
+
+### Changed
+
+- Moved SEO description field from Blog Post page to each individual post
+
 ## [0.0.21] - 2020-08-26
 
 ### Changed
@@ -230,7 +236,8 @@ in case of vulnerabilities.
 - Initial project setup (scripts, linters, netlify config)
 - Initial CMS setup: schemas, test doucments, dashboard, desk document lists..
 
-[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.21...HEAD
+[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.22...HEAD
+[0.0.22]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.21...v0.0.22
 [0.0.21]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.20...v0.0.21
 [0.0.20]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.19...v0.0.20
 [0.0.19]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.18...v0.0.19
