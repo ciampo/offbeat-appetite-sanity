@@ -130,6 +130,18 @@ export default {
     // Seo Image
     generateSeoImageField(),
 
+    {
+      name: 'seoDescription',
+      type: 'string',
+      title: 'SEO description',
+      description: 'Description text used for SEO purposes',
+      fieldset: 'seo',
+      validation: (Rule) =>
+        Rule.min(20)
+          .max(160)
+          .required(),
+    },
+
     // Keywords
     {
       name: 'keywords',

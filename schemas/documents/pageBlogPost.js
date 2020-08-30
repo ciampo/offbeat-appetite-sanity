@@ -1,6 +1,6 @@
 import MdLibraryBooks from 'react-icons/lib/md/library-books';
 
-import { generateSeoTitleField, generateSeoDescriptionField } from '../common/seo';
+import { generateSeoTitleField } from '../common/seo';
 
 export default {
   name: 'pageBlogPost',
@@ -14,12 +14,6 @@ export default {
     generateSeoTitleField({
       additionalDescription:
         'The ":blogPostTitle" placeholder will be replaced with each post\'s title. The ":categoryName" placeholder will be replaced with each post\'s category name.',
-    }),
-
-    // Seo Description
-    generateSeoDescriptionField({
-      additionalDescription:
-        'The ":blogPostExcerpt" placeholder will be replaced with each post excerpt',
     }),
   ],
 
