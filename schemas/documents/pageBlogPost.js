@@ -1,4 +1,4 @@
-import MdLibraryBooks from 'react-icons/lib/md/library-books';
+import { MdLibraryBooks } from 'react-icons/md';
 
 import { generateSeoTitleField } from '../common/seo';
 

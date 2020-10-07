@@ -1,8 +1,8 @@
 import S from '@sanity/desk-tool/structure-builder';
-import MdSettings from 'react-icons/lib/md/settings';
-import MdDescription from 'react-icons/lib/md/description';
-import MdBubbleChart from 'react-icons/lib/md/bubble-chart';
-import MdPermMedia from 'react-icons/lib/md/perm-media';
+import { MdSettings } from "react-icons/md";
+import { MdDescription } from "react-icons/md";
+import { MdBubbleChart } from "react-icons/md";
+import { MdPermMedia } from "react-icons/md";
 
 // https://www.sanity.io/guides/getting-started-with-structure-builder
 export default () =>

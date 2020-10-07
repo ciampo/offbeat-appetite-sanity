@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import LinkIcon from 'react-icons/lib/md/link';
-import GlobeIcon from 'react-icons/lib/fa/globe';
-import ExternalLinkIcon from 'react-icons/lib/fa/external-link';
+import { MdLink as LinkIcon } from 'react-icons/md';
+import { FaGlobe as GlobeIcon } from 'react-icons/fa';
+import { FaExternalLink as ExternalLinkIcon } from 'react-icons/fa';
 
 const ExternalLinkRender = (props) => {
   return (

@@ -1,4 +1,4 @@
-import MdSearch from 'react-icons/lib/md/search';
+import { MdSearch } from 'react-icons/md';
 
 import {
   generateSeoTitleField,

@@ -1,5 +1,5 @@
 import React from 'react';
-import MdVideoCam from 'react-icons/lib/md/videocam';
+import { MdVideocam as MdVideoCam } from 'react-icons/md';
 
 export default {
   name: 'accessibleVideo',

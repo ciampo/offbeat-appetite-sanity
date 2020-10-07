@@ -1,4 +1,4 @@
-import MdPermMedia from 'react-icons/lib/md/perm-media';
+import { MdPermMedia } from 'react-icons/md';
 
 import {
   generateSeoTitleField,

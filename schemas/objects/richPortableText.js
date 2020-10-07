@@ -1,7 +1,7 @@
-import MdImage from 'react-icons/lib/md/image';
-import MdVideoCam from 'react-icons/lib/md/videocam';
-import MdPermMedia from 'react-icons/lib/md/perm-media';
-import MdRestaurantMenu from 'react-icons/lib/md/restaurant-menu';
+import { MdImage } from 'react-icons/md';
+import { MdVideocam as MdVideoCam } from 'react-icons/md';
+import { MdPermMedia } from 'react-icons/md';
+import { MdRestaurantMenu } from 'react-icons/md';
 
 import { portableTextMarks, portableTextLists } from '../common/portableText';
 

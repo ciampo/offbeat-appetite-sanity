@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MdLibraryBooks from 'react-icons/lib/md/library-books';
+import { MdLibraryBooks } from 'react-icons/md';
 
 import { generateSlugField } from '../common/slug';
 import { generateSeoImageField } from '../common/seo';

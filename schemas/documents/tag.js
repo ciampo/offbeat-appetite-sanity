@@ -1,4 +1,4 @@
-import MdStyle from 'react-icons/lib/md/style';
+import { MdStyle } from 'react-icons/md';
 
 import { generateSlugField } from '../common/slug';
 

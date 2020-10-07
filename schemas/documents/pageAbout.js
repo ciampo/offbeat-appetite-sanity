@@ -1,4 +1,4 @@
-import MdPersonPin from 'react-icons/lib/md/person-pin';
+import { MdPersonPin } from 'react-icons/md';
 
 import {
   generateSeoTitleField,

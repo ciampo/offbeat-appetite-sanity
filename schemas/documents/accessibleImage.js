@@ -1,5 +1,5 @@
 import React from 'react';
-import MdImage from 'react-icons/lib/md/image';
+import { MdImage } from 'react-icons/md';
 
 export default {
   name: 'accessibleImage',

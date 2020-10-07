@@ -1,4 +1,4 @@
-import MdStars from 'react-icons/lib/md/stars';
+import { MdStars } from 'react-icons/md';
 
 export default {
   name: 'blogPostRating',

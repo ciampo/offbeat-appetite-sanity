@@ -1,4 +1,4 @@
-import FaHeart from 'react-icons/lib/fa/heart';
+import { FaHeart } from 'react-icons/fa';
 
 import {
   generateSeoTitleField,

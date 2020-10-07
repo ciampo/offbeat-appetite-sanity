@@ -1,5 +1,5 @@
 import React from 'react';
-import MdPerson from 'react-icons/lib/md/person';
+import { MdPerson } from 'react-icons/md';
 
 import { generateSlugField } from '../common/slug';
 import { generateEmailField } from '../common/email';

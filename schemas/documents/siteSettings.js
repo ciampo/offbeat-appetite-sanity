@@ -1,6 +1,6 @@
 import client from 'part:@sanity/base/client';
 
-import MdSettings from 'react-icons/lib/md/settings';
+import { MdSettings } from 'react-icons/md';
 
 const howManyCategoriesQuery = `//groq
   count(*[_type == "category" && !(_id in path("drafts.**"))]{})

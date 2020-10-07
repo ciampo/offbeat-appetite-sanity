@@ -1,4 +1,4 @@
-import MdFlag from 'react-icons/lib/md/flag';
+import { MdFlag } from 'react-icons/md';
 
 import { generateSlugField } from '../common/slug';
 import { generateSeoImageField } from '../common/seo';

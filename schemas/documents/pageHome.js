@@ -1,4 +1,4 @@
-import MdHome from 'react-icons/lib/md/home';
+import { MdHome } from 'react-icons/md';
 
 import {
   generateSeoTitleField,

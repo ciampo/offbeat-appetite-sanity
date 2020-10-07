@@ -1,4 +1,4 @@
-import MdBubbleChart from 'react-icons/lib/md/bubble-chart';
+import { MdBubbleChart } from 'react-icons/md';
 
 import { generateEmailField } from '../common/email';
 
