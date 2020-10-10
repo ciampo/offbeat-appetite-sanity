@@ -35,6 +35,16 @@ for any bug fixes.
 in case of vulnerabilities.
 -->
 
+## [0.0.25] - 2020-10-10
+
+### Changed
+
+- Updated Sanity dependencies to v2.0.2
+
+### Fixed
+
+- Import correct existing icon for external link
+
 ## [0.0.24] - 2020-10-07
 
 ### Changed
@@ -248,7 +258,8 @@ in case of vulnerabilities.
 - Initial project setup (scripts, linters, netlify config)
 - Initial CMS setup: schemas, test doucments, dashboard, desk document lists..
 
-[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.24...HEAD
+[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.25...HEAD
+[0.0.25]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.24..v0.0.25
 [0.0.24]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.23...v0.0.24
 [0.0.23]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.22...v0.0.23
 [0.0.22]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.21...v0.0.22
