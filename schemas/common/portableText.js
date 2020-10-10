@@ -2,7 +2,7 @@
 import React from 'react';
 import { MdLink as LinkIcon } from 'react-icons/md';
 import { FaGlobe as GlobeIcon } from 'react-icons/fa';
-import { FaExternalLink as ExternalLinkIcon } from 'react-icons/fa';
+import { FaExternalLinkAlt as ExternalLinkIcon } from 'react-icons/fa';
 
 const ExternalLinkRender = (props) => {
   return (
