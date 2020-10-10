@@ -908,11 +908,11 @@
   version "1.0.0"
   resolved "https://registry.npmjs.org/@rexxars/eventsource-polyfill/-/eventsource-polyfill-1.0.0.tgz#ab46f2f44da23aedd6f51f13d92a194a5367525b"
 
-"@sanity/asset-utils@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/@sanity/asset-utils/-/asset-utils-1.1.0.tgz#6ab731d940150aea843df405dec2a422e90e5aec"
+"@sanity/asset-utils@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.npmjs.org/@sanity/asset-utils/-/asset-utils-1.1.2.tgz#d6b4b875bee4189cb56f274a7fb5494174463cb2"
 
-"@sanity/base@2.0.1", "@sanity/base@^2.0.1":
+"@sanity/base@2.0.1":
   version "2.0.1"
   resolved "https://registry.npmjs.org/@sanity/base/-/base-2.0.1.tgz#b0183aa03762b02d97fb57903d0cfe3c84ffc8e1"
   dependencies:
@@ -920,6 +920,46 @@
     "@sanity/client" "2.0.1"
     "@sanity/color" "^1.0.0"
     "@sanity/components" "2.0.1"
+    "@sanity/generate-help-url" "2.0.1"
+    "@sanity/image-url" "^0.140.19"
+    "@sanity/initial-value-templates" "2.0.1"
+    "@sanity/mutator" "2.0.1"
+    "@sanity/observable" "2.0.1"
+    "@sanity/preview" "2.0.1"
+    "@sanity/schema" "2.0.1"
+    "@sanity/state-router" "2.0.1"
+    "@sanity/structure" "2.0.1"
+    "@sanity/transaction-collator" "2.0.1"
+    "@sanity/types" "2.0.1"
+    "@sanity/util" "2.0.1"
+    "@sanity/uuid" "2.0.1"
+    "@sanity/validation" "2.0.1"
+    dataloader "^2.0.0"
+    date-fns "^2.16.1"
+    history "^4.6.3"
+    lodash "^4.17.15"
+    nano-pubsub "^2.0.0"
+    nanoid "^3.1.9"
+    observable-callback "^1.0.1"
+    oneline "^1.0.3"
+    promise-props "^1.0.0"
+    raf "^3.4.1"
+    react-fast-compare "^2.0.2"
+    react-icon-base "^2.1.2"
+    react-intl "^2.2.2"
+    react-props-stream "^1.0.0"
+    rxjs "^6.5.3"
+    semver-compare "^1.0.0"
+    shallow-equals "^1.0.0"
+
+"@sanity/base@2.0.2", "@sanity/base@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/@sanity/base/-/base-2.0.2.tgz#166b6ccbe345f8cc0801ba8c08b9a526c24e8683"
+  dependencies:
+    "@sanity/bifur-client" "^0.0.7"
+    "@sanity/client" "2.0.1"
+    "@sanity/color" "^1.0.0"
+    "@sanity/components" "2.0.2"
     "@sanity/generate-help-url" "2.0.1"
     "@sanity/image-url" "^0.140.19"
     "@sanity/initial-value-templates" "2.0.1"
@@ -1085,7 +1125,7 @@
     rxjs "^6.5.2"
     string-hash "^1.1.3"
 
-"@sanity/components@2.0.1", "@sanity/components@^2.0.1":
+"@sanity/components@2.0.1":
   version "2.0.1"
   resolved "https://registry.npmjs.org/@sanity/components/-/components-2.0.1.tgz#830962f9e8c92d6ff8fe8233efd80b4a1c938126"
   dependencies:
@@ -1117,6 +1157,32 @@
     react-split-pane "^0.1.84"
     rxjs "^6.5.3"
     string-hash "^1.1.3"
+
+"@sanity/components@2.0.2", "@sanity/components@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/@sanity/components/-/components-2.0.2.tgz#ccecaa2b9e4c01e4695e1e2653e53a054c5de912"
+  dependencies:
+    "@juggle/resize-observer" "^3.2.0"
+    "@popperjs/core" "^2.4.4"
+    "@reach/auto-id" "^0.10.5"
+    "@sanity/base" "2.0.2"
+    "@sanity/types" "2.0.1"
+    "@sanity/util" "2.0.1"
+    boundless-arrow-key-navigation "^1.1.0"
+    chance "^1.0.4"
+    circular-at "^1.0.3"
+    classnames "^2.2.5"
+    date-fns "^2.16.1"
+    dom-scroll-into-view "^1.2.1"
+    element-resize-detector "^1.1.14"
+    lodash "^4.17.15"
+    nano-pubsub "^2.0.0"
+    popper-max-size-modifier "^0.2.0"
+    react-click-outside "^3.0.0"
+    react-popper "^2.2.3"
+    react-sortable-hoc "^1.11.0"
+    react-split-pane "^0.1.84"
+    rxjs "^6.5.3"
 
 "@sanity/components@^0.140.9":
   version "0.140.38"
@@ -1248,12 +1314,12 @@
     "@sanity/generate-help-url" "0.144.0"
     "@sanity/rich-date-input" "0.144.0"
 
-"@sanity/default-layout@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/@sanity/default-layout/-/default-layout-2.0.1.tgz#f4f8893d2ba0fbcbdcfcefaab01dfacb117e6513"
+"@sanity/default-layout@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/@sanity/default-layout/-/default-layout-2.0.2.tgz#00c78b0950e2088660ac9025485ef7cb50ad1c93"
   dependencies:
-    "@sanity/base" "2.0.1"
-    "@sanity/components" "2.0.1"
+    "@sanity/base" "2.0.2"
+    "@sanity/components" "2.0.2"
     "@sanity/generate-help-url" "2.0.1"
     "@sanity/util" "2.0.1"
     classnames "^2.2.5"
@@ -1271,19 +1337,19 @@
     prop-types "^15.6.0"
     rxjs "^6.5.3"
 
-"@sanity/desk-tool@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/@sanity/desk-tool/-/desk-tool-2.0.1.tgz#1466799d3876d2da0f783184a8b451c97b273e47"
+"@sanity/desk-tool@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/@sanity/desk-tool/-/desk-tool-2.0.2.tgz#de49ceb4425d4caa147442f255ac0a254a1f4372"
   dependencies:
     "@juggle/resize-observer" "^3.2.0"
     "@popperjs/core" "^2.4.4"
     "@reach/auto-id" "^0.10.5"
-    "@sanity/base" "2.0.1"
-    "@sanity/components" "2.0.1"
+    "@sanity/base" "2.0.2"
+    "@sanity/components" "2.0.2"
     "@sanity/data-aspects" "2.0.1"
     "@sanity/diff" "2.0.1"
-    "@sanity/field" "2.0.1"
-    "@sanity/form-builder" "2.0.1"
+    "@sanity/field" "2.0.2"
+    "@sanity/form-builder" "2.0.2"
     "@sanity/generate-help-url" "2.0.1"
     "@sanity/mutator" "2.0.1"
     "@sanity/react-hooks" "2.0.1"
@@ -1360,13 +1426,13 @@
     simple-get "^4.0.0"
     split2 "^3.2.2"
 
-"@sanity/field@2.0.1":
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/@sanity/field/-/field-2.0.1.tgz#436867bb780005edfcbdb69a71353b0b249a5395"
+"@sanity/field@2.0.2":
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/@sanity/field/-/field-2.0.2.tgz#740f357ac9f1da2763ce453725b69436da4dfd37"
   dependencies:
-    "@sanity/asset-utils" "^1.1.0"
-    "@sanity/base" "2.0.1"
-    "@sanity/components" "2.0.1"
+    "@sanity/asset-utils" "^1.1.2"
+    "@sanity/base" "2.0.2"
+    "@sanity/components" "2.0.2"
     "@sanity/diff" "2.0.1"
     "@sanity/react-hooks" "2.0.1"
     "@sanity/types" "2.0.1"
@@ -1374,13 +1440,13 @@
     date-fns "^2.16.1"
     sanity-diff-patch "^1.0.9"
 
-"@sanity/form-builder@2.0.1":
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/@sanity/form-builder/-/form-builder-2.0.1.tgz#ec14dff0459ea019d4d2945b25c3efca86c8699b"
+"@sanity/form-builder@2.0.2":
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/@sanity/form-builder/-/form-builder-2.0.2.tgz#b18cf79ffdea646757e18eb6ee9eafc95c6a2a86"
   dependencies:
-    "@sanity/base" "2.0.1"
+    "@sanity/base" "2.0.2"
     "@sanity/block-tools" "2.0.1"
-    "@sanity/components" "2.0.1"
+    "@sanity/components" "2.0.2"
     "@sanity/generate-help-url" "2.0.1"
     "@sanity/imagetool" "2.0.1"
     "@sanity/mutator" "2.0.1"
@@ -1960,8 +2026,8 @@
   resolved "https://registry.npmjs.org/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
 
 "@types/node@*":
-  version "14.11.5"
-  resolved "https://registry.npmjs.org/@types/node/-/node-14.11.5.tgz#fecad41c041cae7f2404ad4b2d0742fdb628b305"
+  version "14.11.8"
+  resolved "https://registry.npmjs.org/@types/node/-/node-14.11.8.tgz#fe2012f2355e4ce08bca44aeb3abbb21cf88d33f"
 
 "@types/node@^8.0.0":
   version "8.10.64"
@@ -2122,8 +2188,8 @@ ajv@^5.0.0:
     json-schema-traverse "^0.3.0"
 
 ajv@^6.1.0, ajv@^6.10.0, ajv@^6.10.2, ajv@^6.12.3, ajv@^6.12.4:
-  version "6.12.5"
-  resolved "https://registry.npmjs.org/ajv/-/ajv-6.12.5.tgz#19b0e8bae8f476e5ba666300387775fb1a00a4da"
+  version "6.12.6"
+  resolved "https://registry.npmjs.org/ajv/-/ajv-6.12.6.tgz#baf5a62e802b07d977034586f8c3baf5adf26df4"
   dependencies:
     fast-deep-equal "^3.1.1"
     fast-json-stable-stringify "^2.0.0"
@@ -2841,8 +2907,8 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000792, caniuse-lite@^1.0.30000805, caniuse-lite@^1.0.30001135:
-  version "1.0.30001144"
-  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001144.tgz#bca0fffde12f97e1127a351fec3bfc1971aa3b3d"
+  version "1.0.30001146"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001146.tgz#c61fcb1474520c1462913689201fb292ba6f447c"
 
 capture-stack-trace@^1.0.0:
   version "1.0.1"
@@ -3073,9 +3139,9 @@ color-string@^0.3.0:
   dependencies:
     color-name "^1.0.0"
 
-color-string@^1.4.0, color-string@^1.5.2:
-  version "1.5.3"
-  resolved "https://registry.npmjs.org/color-string/-/color-string-1.5.3.tgz#c9bbc5f01b58b5492f3d6857459cb6590ce204cc"
+color-string@^1.4.0, color-string@^1.5.2, color-string@^1.5.4:
+  version "1.5.4"
+  resolved "https://registry.npmjs.org/color-string/-/color-string-1.5.4.tgz#dd51cd25cfee953d138fe4002372cc3d0e504cb6"
   dependencies:
     color-name "^1.0.0"
     simple-swizzle "^0.2.2"
@@ -3103,11 +3169,11 @@ color@^2.0.1:
     color-string "^1.5.2"
 
 color@^3.0.0:
-  version "3.1.2"
-  resolved "https://registry.npmjs.org/color/-/color-3.1.2.tgz#68148e7f85d41ad7649c5fa8c8106f098d229e10"
+  version "3.1.3"
+  resolved "https://registry.npmjs.org/color/-/color-3.1.3.tgz#ca67fb4e7b97d611dcde39eceed422067d91596e"
   dependencies:
     color-convert "^1.9.1"
-    color-string "^1.5.2"
+    color-string "^1.5.4"
 
 combined-stream@^1.0.6, combined-stream@~1.0.6:
   version "1.0.8"
@@ -3469,8 +3535,8 @@ css-unit-converter@^1.1.1:
   resolved "https://registry.npmjs.org/css-unit-converter/-/css-unit-converter-1.1.2.tgz#4c77f5a1954e6dbff60695ecb214e3270436ab21"
 
 css-what@^3.2.1:
-  version "3.4.1"
-  resolved "https://registry.npmjs.org/css-what/-/css-what-3.4.1.tgz#81cb70b609e4b1351b1e54cbc90fd9c54af86e2e"
+  version "3.4.2"
+  resolved "https://registry.npmjs.org/css-what/-/css-what-3.4.2.tgz#ea7026fcb01777edbde52124e21f327e7ae950e4"
 
 cssesc@^3.0.0:
   version "3.0.0"
@@ -4142,14 +4208,14 @@ eslint-plugin-react-hooks@^2.3.0:
   resolved "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-2.5.1.tgz#4ef5930592588ce171abeb26f400c7fbcbc23cd0"
 
 eslint-plugin-react@^7.17.0:
-  version "7.21.3"
-  resolved "https://registry.npmjs.org/eslint-plugin-react/-/eslint-plugin-react-7.21.3.tgz#71655d2af5155b19285ec929dd2cdc67a4470b52"
+  version "7.21.4"
+  resolved "https://registry.npmjs.org/eslint-plugin-react/-/eslint-plugin-react-7.21.4.tgz#31060b2e5ff82b12e24a3cc33edb7d12f904775c"
   dependencies:
     array-includes "^3.1.1"
     array.prototype.flatmap "^1.2.3"
     doctrine "^2.1.0"
     has "^1.0.3"
-    jsx-ast-utils "^2.4.1"
+    jsx-ast-utils "^2.4.1 || ^3.0.0"
     object.entries "^1.1.2"
     object.fromentries "^2.0.2"
     object.values "^1.1.1"
@@ -5826,12 +5892,12 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
-jsx-ast-utils@^2.4.1:
-  version "2.4.1"
-  resolved "https://registry.npmjs.org/jsx-ast-utils/-/jsx-ast-utils-2.4.1.tgz#1114a4c1209481db06c690c2b4f488cc665f657e"
+"jsx-ast-utils@^2.4.1 || ^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/jsx-ast-utils/-/jsx-ast-utils-3.0.0.tgz#0f49d5093bafa4b45d3fe02147d8b40ffc6c7438"
   dependencies:
     array-includes "^3.1.1"
-    object.assign "^4.1.0"
+    object.assign "^4.1.1"
 
 kind-of@^3.0.2, kind-of@^3.0.3, kind-of@^3.2.0:
   version "3.2.2"
@@ -9521,12 +9587,12 @@ ts-easing@^0.2.0:
   resolved "https://registry.npmjs.org/ts-easing/-/ts-easing-0.2.0.tgz#c8a8a35025105566588d87dbda05dd7fbfa5a4ec"
 
 tslib@^1.10.0, tslib@^1.9.0:
-  version "1.14.0"
-  resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.0.tgz#d624983f3e2c5e0b55307c3dd6c86acd737622c6"
+  version "1.14.1"
+  resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
 
 tslib@^2.0.0:
-  version "2.0.2"
-  resolved "https://registry.npmjs.org/tslib/-/tslib-2.0.2.tgz#462295631185db44b21b1ea3615b63cd1c038242"
+  version "2.0.3"
+  resolved "https://registry.npmjs.org/tslib/-/tslib-2.0.3.tgz#8e0741ac45fc0c226e58a17bfc3e64b9bc6ca61c"
 
 tty-browserify@0.0.0:
   version "0.0.0"
