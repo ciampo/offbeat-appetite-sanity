@@ -35,6 +35,13 @@ for any bug fixes.
 in case of vulnerabilities.
 -->
 
+## [0.0.26] - 2020-11-08
+
+### Changed
+
+- Swapped Subscribe toast with Subscribe modal
+- Updated Sanity dependencies to v2.0.9
+
 ## [0.0.25] - 2020-10-10
 
 ### Changed
@@ -258,7 +265,8 @@ in case of vulnerabilities.
 - Initial project setup (scripts, linters, netlify config)
 - Initial CMS setup: schemas, test doucments, dashboard, desk document lists..
 
-[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.25...HEAD
+[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.26...HEAD
+[0.0.25]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.25..v0.0.26
 [0.0.25]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.24..v0.0.25
 [0.0.24]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.23...v0.0.24
 [0.0.23]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.22...v0.0.23
