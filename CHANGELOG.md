@@ -35,6 +35,12 @@ for any bug fixes.
 in case of vulnerabilities.
 -->
 
+## [0.0.27] - 2020-11-08
+
+### Changed
+
+- Add Subscribe Modal's CTA label text
+
 ## [0.0.26] - 2020-11-08
 
 ### Changed
@@ -265,8 +271,9 @@ in case of vulnerabilities.
 - Initial project setup (scripts, linters, netlify config)
 - Initial CMS setup: schemas, test doucments, dashboard, desk document lists..
 
-[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.26...HEAD
-[0.0.25]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.25..v0.0.26
+[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.27...HEAD
+[0.0.27]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.26..v0.0.27
+[0.0.26]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.25..v0.0.26
 [0.0.25]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.24..v0.0.25
 [0.0.24]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.23...v0.0.24
 [0.0.23]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.22...v0.0.23
