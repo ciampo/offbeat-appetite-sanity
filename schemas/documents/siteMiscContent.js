@@ -319,5 +319,15 @@ export default {
       description: 'The image displayed in the "subscribe" modal banner',
       validation: (Rule) => Rule.required(),
     },
+
+    // Subscribe modal - Description
+    {
+      fieldset: 'subscribeModal',
+      name: 'subscribeModalCTAButton',
+      type: 'string',
+      title: "Subscribe modal banner's label for the CTA button",
+      description: `The text displayed for the CTA button in the "subscribe" modal banner`,
+      validation: (Rule) => Rule.required(),
+    },
   ],
 };
