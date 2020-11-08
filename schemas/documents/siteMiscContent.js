@@ -17,6 +17,7 @@ export default {
     { name: 'recipe', title: 'Recipe block' },
     { name: 'blogPost', title: 'Blog post' },
     { name: 'subscribeForm', title: 'Subscribe form' },
+    { name: 'subscribeModal', title: 'Subscribe modal banner' },
   ],
   fields: [
     // Site Name
@@ -285,6 +286,37 @@ export default {
       type: 'string',
       title: 'Error message',
       description: `The text shown to the user when an error happens during submission`,
+      validation: (Rule) => Rule.required(),
+    },
+
+    // Subscribe modal - Title
+    {
+      fieldset: 'subscribeModal',
+      name: 'subscribeModalTitle',
+      type: 'string',
+      title: "Subscribe modal banner's title",
+      description: `The text displayed as the title in the "subscribe" modal banner`,
+      validation: (Rule) => Rule.required(),
+    },
+
+    // Subscribe modal - Description
+    {
+      fieldset: 'subscribeModal',
+      name: 'subscribeModalDescription',
+      type: 'string',
+      title: "Subscribe modal banner's description",
+      description: `The text displayed as the description in the "subscribe" modal banner`,
+      validation: (Rule) => Rule.required(),
+    },
+
+    // Subscribe modal - Image
+    {
+      fieldset: 'subscribeModal',
+      name: 'subscribeModalImage',
+      type: 'reference',
+      title: "Subscribe modal banner's image",
+      to: [{ type: 'accessibleImage' }],
+      description: 'The image displayed in the "subscribe" modal banner',
       validation: (Rule) => Rule.required(),
     },
   ],
