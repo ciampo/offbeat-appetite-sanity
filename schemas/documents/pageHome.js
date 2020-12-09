@@ -28,7 +28,26 @@ export default {
       name: 'subtitle',
       type: 'string',
       title: 'Subtitle',
-      description: 'The subtitle shown in the page under the title',
+      description: "The title shown in the page's hero",
+      validation: (Rule) => Rule.required(),
+    },
+
+    // Hero Image
+    {
+      name: 'heroImage',
+      title: 'Hero Image',
+      type: 'reference',
+      to: [{ type: 'accessibleImage' }],
+      description: "The image displayed in the page's hero",
+      validation: (Rule) => Rule.required(),
+    },
+
+    // Hero CTA Label
+    {
+      name: 'heroCtaLabel',
+      type: 'string',
+      title: "Hero CTA Button's label",
+      description: "The label of the CTA button in the page's hero",
       validation: (Rule) => Rule.required(),
     },
 

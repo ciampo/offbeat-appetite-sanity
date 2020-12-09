@@ -28,6 +28,25 @@ export default {
       validation: (Rule) => Rule.max(30).required(),
     },
 
+    // Description
+    {
+      name: 'description',
+      type: 'string',
+      title: 'Description',
+      description: 'The description displayed throughout the site under the category name',
+      validation: (Rule) => Rule.required(),
+    },
+
+    // Hero Image
+    {
+      name: 'heroImage',
+      title: 'Hero Image',
+      type: 'reference',
+      to: [{ type: 'accessibleImage' }],
+      description: "The image displayed in the category page's hero",
+      validation: (Rule) => Rule.required(),
+    },
+
     // Featured posts
     {
       name: 'featured',

@@ -23,11 +23,22 @@ export default {
       validation: (Rule) => Rule.required(),
     },
 
+    // Hero Title
     {
       name: 'heroTitle',
       type: 'string',
       title: 'Hero Title',
       description: 'The title shown in the page hero',
+      validation: (Rule) => Rule.required(),
+    },
+
+    // Hero Image
+    {
+      name: 'heroImage',
+      title: 'Hero Image',
+      type: 'reference',
+      to: [{ type: 'accessibleImage' }],
+      description: "The image displayed in the page's hero",
       validation: (Rule) => Rule.required(),
     },
 
