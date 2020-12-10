@@ -51,6 +51,33 @@ export default {
       validation: (Rule) => Rule.required(),
     },
 
+    // About section title
+    {
+      name: 'aboutTitle',
+      type: 'string',
+      title: 'About section title',
+      description: 'The title shown in the "About" section',
+      validation: (Rule) => Rule.required(),
+    },
+
+    // About section content
+    {
+      name: 'aboutContent',
+      type: 'simplePortableText',
+      title: 'About section Content',
+      description: 'The content of the "About" section',
+      validation: (Rule) => Rule.required(),
+    },
+
+    // About section Image
+    {
+      name: 'aboutImage',
+      title: 'A Image',
+      type: 'reference',
+      to: [{ type: 'accessibleImage' }],
+      description: 'The image displayed in the "About" section',
+      validation: (Rule) => Rule.required(),
+    },
     // Category sections
     {
       name: 'categorySections',
