@@ -35,6 +35,18 @@ for any bug fixes.
 in case of vulnerabilities.
 -->
 
+## [0.0.28] - 2020-12-10
+
+### Added
+
+- Add about section fields to Home page
+- Add hero fields to Home page, About page and Categories
+
+### Changed
+
+- Update Sanity deps to 2.1.1
+- Update to eslint-plugin-prettier@3.2.0, husky@4.3.5, lint-staged@10.5.3
+
 ## [0.0.27] - 2020-11-08
 
 ### Changed
@@ -271,7 +283,8 @@ in case of vulnerabilities.
 - Initial project setup (scripts, linters, netlify config)
 - Initial CMS setup: schemas, test doucments, dashboard, desk document lists..
 
-[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.27...HEAD
+[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.28...HEAD
+[0.0.28]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.27..v0.0.28
 [0.0.27]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.26..v0.0.27
 [0.0.26]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.25..v0.0.26
 [0.0.25]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.24..v0.0.25
