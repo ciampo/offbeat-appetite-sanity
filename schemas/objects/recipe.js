@@ -78,6 +78,41 @@ export default {
               validation: (Rule) => Rule.required(),
             },
             {
+              name: 'internalLink',
+              title: 'Internal Link',
+              description: 'A link to another page/post of this site',
+              type: 'reference',
+              to: [{ type: 'blogPost' }],
+              validation: (Rule) =>
+                Rule.custom((internalLink, context) => {
+                  if (
+                    typeof internalLink !== 'undefined' &&
+                    typeof context.parent.externalLink !== 'undefined'
+                  ) {
+                    return 'Only one link can be defined (either internal or external)';
+                  }
+
+                  return true;
+                }),
+            },
+            {
+              name: 'externalLink',
+              title: 'External Link',
+              description: 'A link to a URL outside of this site',
+              type: 'url',
+              validation: (Rule) =>
+                Rule.custom((externalLink, context) => {
+                  if (
+                    typeof externalLink !== 'undefined' &&
+                    typeof context.parent.internalLink !== 'undefined'
+                  ) {
+                    return 'Only one link can be defined (either internal or external)';
+                  }
+
+                  return true;
+                }),
+            },
+            {
               name: 'unit',
               title: 'Unit',
               description: "The unit of measure for the ingredients's quantity",
