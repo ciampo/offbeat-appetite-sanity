@@ -1,3 +1,5 @@
+import { internalLinkReferenceTypes } from '../common/portableText';
+
 export default {
   name: 'recipe',
   title: 'Recipe',
@@ -82,7 +84,7 @@ export default {
               title: 'Internal Link',
               description: 'A link to another page/post of this site',
               type: 'reference',
-              to: [{ type: 'blogPost' }],
+              to: internalLinkReferenceTypes,
               validation: (Rule) =>
                 Rule.custom((internalLink, context) => {
                   if (

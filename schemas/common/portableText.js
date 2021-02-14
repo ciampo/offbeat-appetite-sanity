@@ -21,6 +21,13 @@ const InternalLinkRender = (props) => {
   );
 };
 
+export const internalLinkReferenceTypes = [
+  { type: 'blogPost' },
+  { type: 'category' },
+  { type: 'pageHome' },
+  { type: 'pageAbout' },
+];
+
 export const portableTextMarks = {
   decorators: [
     { title: 'Strong', value: 'strong' },
@@ -40,7 +47,7 @@ export const portableTextMarks = {
           name: 'reference',
           type: 'reference',
           title: 'Reference',
-          to: [{ type: 'blogPost' }],
+          to: internalLinkReferenceTypes,
           validation: (Rule) => Rule.required(),
         },
       ],
