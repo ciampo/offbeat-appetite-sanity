@@ -35,6 +35,17 @@ for any bug fixes.
 in case of vulnerabilities.
 -->
 
+## [0.0.29] - 2021-02-14
+
+### Changed
+
+- Updated Sanity deps
+- Updated other deps
+
+### Added
+
+- Add internal/external link to recipe ingredients
+
 ## [0.0.28] - 2020-12-10
 
 ### Added
@@ -283,7 +294,8 @@ in case of vulnerabilities.
 - Initial project setup (scripts, linters, netlify config)
 - Initial CMS setup: schemas, test doucments, dashboard, desk document lists..
 
-[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.28...HEAD
+[unreleased]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.29...HEAD
+[0.0.29]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.28..v0.0.29
 [0.0.28]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.27..v0.0.28
 [0.0.27]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.26..v0.0.27
 [0.0.26]: https://github.com/ciampo/offbeat-appetite-sanity/compare/v0.0.25..v0.0.26
